@@ -1,0 +1,153 @@
+{
+  "entities": [
+    {
+      "name": "medicareID",
+      "displayName": "@medicareID",
+      "kind": "KIND_REGEXP",
+      "regexp": {
+        "pattern": "\\d{3}-\\d{2}-\\d{4}"
+      },
+      "enableFuzzyExtraction": false
+    },
+    {
+      "name": "claimNumber",
+      "displayName": "@claimNumber",
+      "kind": "KIND_MAP",
+      "entities": [
+        {
+          "value": "CLM-2024-001",
+          "synonyms": ["CLM-2024-001", "claim 001", "claim 1"]
+        },
+        {
+          "value": "CLM-2024-002",
+          "synonyms": ["CLM-2024-002", "claim 002", "claim 2"]
+        },
+        {
+          "value": "CLM-2024-003",
+          "synonyms": ["CLM-2024-003", "claim 003", "claim 3"]
+        },
+        {
+          "value": "CLM-2024-004",
+          "synonyms": ["CLM-2024-004", "claim 004", "claim 4"]
+        },
+        {
+          "value": "CLM-2024-005",
+          "synonyms": ["CLM-2024-005", "claim 005", "claim 5"]
+        },
+        {
+          "value": "CLM-2024-006",
+          "synonyms": ["CLM-2024-006", "claim 006", "claim 6"]
+        },
+        {
+          "value": "CLM-2024-007",
+          "synonyms": ["CLM-2024-007", "claim 007", "claim 7"]
+        },
+        {
+          "value": "CLM-2024-008",
+          "synonyms": ["CLM-2024-008", "claim 008", "claim 8"]
+        },
+        {
+          "value": "CLM-2024-009",
+          "synonyms": ["CLM-2024-009", "claim 009", "claim 9"]
+        },
+        {
+          "value": "CLM-2024-010",
+          "synonyms": ["CLM-2024-010", "claim 010", "claim 10"]
+        }
+      ],
+      "enableFuzzyExtraction": true
+    },
+    {
+      "name": "benefitType",
+      "displayName": "@benefitType",
+      "kind": "KIND_MAP",
+      "entities": [
+        {
+          "value": "Part A",
+          "synonyms": ["Part A", "Medicare Part A", "hospital insurance", "hospital coverage"]
+        },
+        {
+          "value": "Part B",
+          "synonyms": ["Part B", "Medicare Part B", "medical insurance", "outpatient coverage"]
+        },
+        {
+          "value": "Part C",
+          "synonyms": ["Part C", "Medicare Part C", "Medicare Advantage", "MA"]
+        },
+        {
+          "value": "Part D",
+          "synonyms": ["Part D", "Medicare Part D", "prescription drug coverage", "drug plan"]
+        },
+        {
+          "value": "dental",
+          "synonyms": ["dental", "dental coverage", "dental benefits", "teeth"]
+        },
+        {
+          "value": "vision",
+          "synonyms": ["vision", "vision coverage", "eye care", "glasses", "contacts"]
+        },
+        {
+          "value": "hearing",
+          "synonyms": ["hearing", "hearing aids", "hearing coverage", "audiology"]
+        }
+      ],
+      "enableFuzzyExtraction": true
+    },
+    {
+      "name": "providerSpecialty",
+      "displayName": "@providerSpecialty",
+      "kind": "KIND_MAP",
+      "entities": [
+        {
+          "value": "primary care",
+          "synonyms": ["primary care", "PCP", "general practitioner", "family doctor", "family medicine"]
+        },
+        {
+          "value": "cardiologist",
+          "synonyms": ["cardiologist", "heart doctor", "cardiac specialist", "cardiology"]
+        },
+        {
+          "value": "dentist",
+          "synonyms": ["dentist", "dental", "orthodontist", "oral surgeon"]
+        },
+        {
+          "value": "dermatologist",
+          "synonyms": ["dermatologist", "skin doctor", "dermatology"]
+        },
+        {
+          "value": "endocrinologist",
+          "synonyms": ["endocrinologist", "diabetes doctor", "hormone specialist", "endocrinology"]
+        },
+        {
+          "value": "gastroenterologist",
+          "synonyms": ["gastroenterologist", "GI doctor", "digestive specialist", "gastroenterology"]
+        },
+        {
+          "value": "neurologist",
+          "synonyms": ["neurologist", "brain doctor", "neurology"]
+        },
+        {
+          "value": "oncologist",
+          "synonyms": ["oncologist", "cancer doctor", "oncology"]
+        },
+        {
+          "value": "ophthalmologist",
+          "synonyms": ["ophthalmologist", "eye doctor", "vision specialist", "ophthalmology"]
+        },
+        {
+          "value": "orthopedist",
+          "synonyms": ["orthopedist", "orthopedic surgeon", "bone doctor", "orthopedics"]
+        },
+        {
+          "value": "psychiatrist",
+          "synonyms": ["psychiatrist", "mental health doctor", "psychiatry"]
+        },
+        {
+          "value": "pulmonologist",
+          "synonyms": ["pulmonologist", "lung doctor", "respiratory specialist", "pulmonology"]
+        }
+      ],
+      "enableFuzzyExtraction": true
+    }
+  ]
+}

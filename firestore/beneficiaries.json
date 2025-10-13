@@ -1,0 +1,99 @@
+{
+  "beneficiaries": [
+    {
+      "medicareId": "123-45-6789",
+      "firstName": "Mary",
+      "lastName": "Johnson",
+      "dateOfBirth": "1950-03-15",
+      "email": "mary.johnson@example.com",
+      "phone": "(555) 123-4567",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62701"
+      },
+      "enrollmentDate": "2015-01-01",
+      "coverageType": ["Part A", "Part B", "Part D"],
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en"
+    },
+    {
+      "medicareId": "234-56-7890",
+      "firstName": "Robert",
+      "lastName": "Smith",
+      "dateOfBirth": "1948-07-22",
+      "email": "robert.smith@example.com",
+      "phone": "(555) 234-5678",
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201"
+      },
+      "enrollmentDate": "2013-06-15",
+      "coverageType": ["Part A", "Part B", "Part C"],
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en"
+    },
+    {
+      "medicareId": "345-67-8901",
+      "firstName": "Patricia",
+      "lastName": "Williams",
+      "dateOfBirth": "1952-11-08",
+      "email": "patricia.williams@example.com",
+      "phone": "(555) 345-6789",
+      "address": {
+        "street": "789 Pine Road",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701"
+      },
+      "enrollmentDate": "2017-03-20",
+      "coverageType": ["Part A", "Part B", "Part D", "dental", "vision"],
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en"
+    },
+    {
+      "medicareId": "456-78-9012",
+      "firstName": "James",
+      "lastName": "Brown",
+      "dateOfBirth": "1949-05-30",
+      "email": "james.brown@example.com",
+      "phone": "(555) 456-7890",
+      "address": {
+        "street": "321 Elm Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101"
+      },
+      "enrollmentDate": "2014-09-10",
+      "coverageType": ["Part A", "Part B"],
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en"
+    },
+    {
+      "medicareId": "567-89-0123",
+      "firstName": "Linda",
+      "lastName": "Davis",
+      "dateOfBirth": "1951-12-18",
+      "email": "linda.davis@example.com",
+      "phone": "(555) 567-8901",
+      "address": {
+        "street": "654 Maple Drive",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201"
+      },
+      "enrollmentDate": "2016-11-05",
+      "coverageType": ["Part A", "Part B", "Part D", "dental"],
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en"
+    }
+  ]
+}

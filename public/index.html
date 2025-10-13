@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Beneficiary Self-Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h1>CMS Beneficiary Self-Service</h1>
+      </div>
+      <div class="header-info">
+        <span class="support-info">📞 1-800-MEDICARE</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    <!-- Welcome Section (shown before chat starts) -->
+    <div id="welcomeSection" class="welcome-section">
+      <div class="welcome-content">
+        <div class="welcome-icon">💬</div>
+        <h2>Welcome to CMS Virtual Assistant</h2>
+        <p class="welcome-description">
+          I'm here to help you with Medicare and Medicaid services. You can:
+        </p>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-icon">✓</span>
+            Check your claim status
+          </li>
+          <li>
+            <span class="feature-icon">✓</span>
+            Learn about your benefits
+          </li>
+          <li>
+            <span class="feature-icon">✓</span>
+            Find healthcare providers
+          </li>
+          <li>
+            <span class="feature-icon">✓</span>
+            Connect with support agents
+          </li>
+        </ul>
+        <button id="startChatBtn" class="start-btn">Start Conversation</button>
+        <p class="privacy-note">
+          🔒 Your information is secure and HIPAA-compliant
+        </p>
+      </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div id="chatSection" class="chat-section hidden">
+      <!-- Chat Messages Container -->
+      <div id="chatMessages" class="chat-messages">
+        <!-- Messages will be dynamically added here -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="typingIndicator" class="typing-indicator hidden">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <span>Assistant is typing...</span>
+      </div>
+
+      <!-- Quick Replies -->
+      <div id="quickReplies" class="quick-replies hidden">
+        <!-- Quick reply buttons will be dynamically added here -->
+      </div>
+
+      <!-- Chat Input -->
+      <div class="chat-input-container">
+        <div class="chat-input-wrapper">
+          <input 
+            type="text" 
+            id="chatInput" 
+            class="chat-input" 
+            placeholder="Type your message..."
+            autocomplete="off"
+          >
+          <button id="sendBtn" class="send-btn" aria-label="Send message">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <p class="input-hint">
+          Press Enter to send • Type "help" for assistance
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Centers for Medicare & Medicaid Services | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+  </footer>
+
+  <script src="chat.js"></script>
+</body>
+</html>

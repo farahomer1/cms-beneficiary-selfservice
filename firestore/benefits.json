@@ -1,0 +1,265 @@
+{
+  "benefits": [
+    {
+      "benefitType": "Part A",
+      "displayName": "Medicare Part A - Hospital Insurance",
+      "description": "Part A covers inpatient hospital stays, care in a skilled nursing facility, hospice care, and some home health care.",
+      "coverage": {
+        "inpatientHospital": {
+          "description": "Semi-private room, meals, general nursing, and other hospital services and supplies",
+          "costSharing": {
+            "deductible": "$1,632 per benefit period (2024)",
+            "coinsurance": [
+              "Days 1-60: $0 coinsurance",
+              "Days 61-90: $408 coinsurance per day",
+              "Days 91+: $816 coinsurance per lifetime reserve day"
+            ]
+          }
+        },
+        "skilledNursingFacility": {
+          "description": "Semi-private room, meals, skilled nursing and rehabilitative services",
+          "costSharing": {
+            "coinsurance": [
+              "Days 1-20: $0 coinsurance",
+              "Days 21-100: $204 coinsurance per day"
+            ]
+          },
+          "requirements": "Must have a 3-day qualifying hospital stay"
+        },
+        "hospiceCare": {
+          "description": "Pain relief, symptom management, and support services for the terminally ill",
+          "costSharing": {
+            "copayment": "Limited costs for outpatient drugs and respite care"
+          }
+        },
+        "homeHealthCare": {
+          "description": "Part-time or intermittent skilled nursing care and home health aide services",
+          "costSharing": {
+            "cost": "$0 for covered services",
+            "requirement": "Must be homebound and under doctor's care"
+          }
+        }
+      },
+      "eligibility": "Automatically enrolled if receiving Social Security benefits at age 65",
+      "premium": "Most people don't pay a Part A premium if they or their spouse paid Medicare taxes while working"
+    },
+    {
+      "benefitType": "Part B",
+      "displayName": "Medicare Part B - Medical Insurance",
+      "description": "Part B covers certain doctors' services, outpatient care, medical supplies, and preventive services.",
+      "coverage": {
+        "doctorServices": {
+          "description": "Medically necessary doctors' services, outpatient medical and surgical services",
+          "costSharing": {
+            "deductible": "$240 per year (2024)",
+            "coinsurance": "20% of Medicare-approved amount after deductible"
+          }
+        },
+        "preventiveCare": {
+          "description": "Services to prevent illness or detect it at an early stage",
+          "examples": [
+            "Annual wellness visit",
+            "Cardiovascular screening",
+            "Diabetes screening",
+            "Mammograms",
+            "Colorectal cancer screening",
+            "Bone mass measurement"
+          ],
+          "costSharing": {
+            "cost": "Most preventive services are free"
+          }
+        },
+        "outpatientCare": {
+          "description": "Care you get in a doctor's office, clinic, or hospital outpatient department",
+          "costSharing": {
+            "coinsurance": "20% of Medicare-approved amount"
+          }
+        },
+        "medicalEquipment": {
+          "description": "Durable medical equipment like wheelchairs, walkers, hospital beds",
+          "costSharing": {
+            "coinsurance": "20% of Medicare-approved amount"
+          }
+        },
+        "mentalHealth": {
+          "description": "Outpatient mental health services",
+          "costSharing": {
+            "coinsurance": "20% of Medicare-approved amount"
+          }
+        }
+      },
+      "eligibility": "Must be enrolled in Part A or be 65 or older",
+      "premium": "$174.70 per month (standard premium for 2024)",
+      "lateEnrollmentPenalty": "May pay a late enrollment penalty if you don't sign up when first eligible"
+    },
+    {
+      "benefitType": "Part C",
+      "displayName": "Medicare Part C - Medicare Advantage",
+      "description": "Part C is an alternative way to get Medicare benefits through private insurance companies approved by Medicare.",
+      "coverage": {
+        "includedServices": {
+          "description": "All Part A and Part B services, often includes Part D prescription drug coverage",
+          "additional": [
+            "Dental coverage",
+            "Vision coverage",
+            "Hearing aids",
+            "Fitness programs",
+            "Over-the-counter benefits"
+          ]
+        },
+        "network": {
+          "description": "Most plans have networks of doctors, hospitals, and other providers",
+          "types": [
+            "HMO: Must use network providers except in emergencies",
+            "PPO: Can use out-of-network providers at higher cost",
+            "PFFS: Can see any Medicare-approved provider who accepts the plan",
+            "SNP: Special Needs Plans for people with specific conditions"
+          ]
+        }
+      },
+      "costSharing": {
+        "premium": "Varies by plan, in addition to Part B premium",
+        "outOfPocketMaximum": "Plans must have a yearly limit on what you pay out-of-pocket",
+        "copayments": "Vary by plan and service"
+      },
+      "eligibility": "Must have Part A and Part B, and live in the plan's service area",
+      "enrollment": "Can enroll during Annual Enrollment Period (October 15 - December 7)"
+    },
+    {
+      "benefitType": "Part D",
+      "displayName": "Medicare Part D - Prescription Drug Coverage",
+      "description": "Part D helps cover the cost of prescription drugs, including many recommended vaccines.",
+      "coverage": {
+        "prescriptionDrugs": {
+          "description": "Coverage for brand-name and generic prescription drugs at participating pharmacies",
+          "formulary": "Each plan has a list of covered drugs (formulary)",
+          "tiers": [
+            "Tier 1: Generic drugs (lowest cost)",
+            "Tier 2: Preferred brand drugs",
+            "Tier 3: Non-preferred brand drugs",
+            "Tier 4: Specialty drugs (highest cost)"
+          ]
+        },
+        "vaccines": {
+          "description": "Vaccines including shingles and others not covered by Part B",
+          "costSharing": "Varies by plan"
+        }
+      },
+      "costSharing": {
+        "premium": "Varies by plan (average $55 per month for 2024)",
+        "deductible": "Up to $545 (2024), varies by plan",
+        "coverageStages": [
+          "Initial Coverage: Pay copay/coinsurance until total drug costs reach $5,030",
+          "Coverage Gap: Pay 25% of drug costs",
+          "Catastrophic Coverage: Pay small copay or coinsurance after $8,000 out-of-pocket"
+        ]
+      },
+      "eligibility": "Available to anyone with Part A and/or Part B",
+      "lateEnrollmentPenalty": "May pay a penalty if you go 63 days or more without creditable drug coverage"
+    },
+    {
+      "benefitType": "dental",
+      "displayName": "Dental Coverage",
+      "description": "Original Medicare doesn't cover most dental care, dental procedures, or supplies like cleanings, fillings, tooth extractions, dentures, dental plates, or other dental devices.",
+      "coverage": {
+        "originalMedicare": {
+          "description": "Limited to dental services related to covered medical procedures",
+          "examples": [
+            "Dental exam before kidney transplant",
+            "Dental exam before heart valve replacement",
+            "Jaw reconstruction after accidental injury"
+          ]
+        },
+        "medicareAdvantage": {
+          "description": "Many Medicare Advantage plans offer dental coverage",
+          "services": [
+            "Routine cleanings",
+            "X-rays",
+            "Fillings",
+            "Extractions",
+            "Dentures (some plans)"
+          ],
+          "costSharing": "Varies by plan"
+        },
+        "standalonePlans": {
+          "description": "Separate dental insurance plans available for purchase",
+          "consideration": "Review coverage limits and waiting periods"
+        }
+      },
+      "recommendation": "Consider supplemental dental insurance or Medicare Advantage plan with dental benefits"
+    },
+    {
+      "benefitType": "vision",
+      "displayName": "Vision Coverage",
+      "description": "Original Medicare covers some eye care services and medical eye conditions, but not routine eye exams or eyeglasses.",
+      "coverage": {
+        "originalMedicare": {
+          "partB": {
+            "description": "Covers eye exams and treatment for eye diseases and conditions",
+            "covered": [
+              "Yearly eye exam for diabetic retinopathy for people with diabetes",
+              "Glaucoma tests for high-risk patients",
+              "Macular degeneration treatment",
+              "Cataract surgery and one pair of glasses after surgery"
+            ],
+            "costSharing": {
+              "eyeExam": "20% of Medicare-approved amount after deductible",
+              "glasses": "20% of Medicare-approved amount for one pair after cataract surgery"
+            }
+          }
+        },
+        "medicareAdvantage": {
+          "description": "Many plans offer additional vision benefits",
+          "services": [
+            "Routine eye exams",
+            "Eyeglasses or contact lenses",
+            "Contact lens fitting",
+            "Allowance for frames or lenses"
+          ],
+          "costSharing": "Varies by plan, often includes annual allowance"
+        },
+        "notCovered": {
+          "items": [
+            "Routine eye exams (without medical necessity)",
+            "Eyeglasses (except after cataract surgery)",
+            "Contact lenses (except after cataract surgery)"
+          ]
+        }
+      },
+      "recommendation": "Consider Medicare Advantage plan with vision benefits or standalone vision insurance"
+    },
+    {
+      "benefitType": "hearing",
+      "displayName": "Hearing Coverage",
+      "description": "Medicare coverage for hearing services and hearing aids is limited.",
+      "coverage": {
+        "originalMedicare": {
+          "partB": {
+            "description": "Covers diagnostic hearing and balance exams if ordered by a doctor",
+            "covered": [
+              "Hearing tests ordered by doctor to determine if treatment is needed"
+            ],
+            "notCovered": [
+              "Routine hearing exams",
+              "Hearing aids",
+              "Hearing aid fittings or exams"
+            ],
+            "costSharing": {
+              "diagnosticTest": "20% of Medicare-approved amount after deductible"
+            }
+          }
+        },
+        "medicareAdvantage": {
+          "description": "Some plans offer hearing benefits",
+          "services": [
+            "Routine hearing exams",
+            "Hearing aid allowance",
+            "Hearing aid fitting"
+          ],
+          "costSharing": "Varies by plan, may include annual allowance for hearing aids"
+        }
+      },
+      "recommendation": "If you need hearing aids, consider Medicare Advantage plan with hearing benefits or explore other coverage options"
+    }
+  ]
+}

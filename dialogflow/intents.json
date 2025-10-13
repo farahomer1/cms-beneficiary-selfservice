@@ -1,0 +1,703 @@
+{
+  "intents": [
+    {
+      "name": "Greeting",
+      "displayName": "Greeting",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "Hello"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Hi there"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Good morning"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Good afternoon"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Good evening"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "I need help"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Hey"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Hi"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Help me"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Start"
+            }
+          ]
+        }
+      ],
+      "action": "greeting",
+      "outputContexts": [],
+      "parameters": []
+    },
+    {
+      "name": "AuthenticateUser",
+      "displayName": "AuthenticateUser",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "I need to verify my identity"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "My Medicare ID is "
+            },
+            {
+              "text": "123-45-6789",
+              "entityType": "@medicareID",
+              "alias": "medicareID"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "I want to log in"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Can you authenticate me?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Verify my account"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Login with ID "
+            },
+            {
+              "text": "987-65-4321",
+              "entityType": "@medicareID",
+              "alias": "medicareID"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Authenticate me"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Sign in"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "My ID is "
+            },
+            {
+              "text": "456-78-9012",
+              "entityType": "@medicareID",
+              "alias": "medicareID"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Verify identity"
+            }
+          ]
+        }
+      ],
+      "action": "authenticate",
+      "outputContexts": [],
+      "parameters": [
+        {
+          "name": "medicareID",
+          "displayName": "Medicare ID",
+          "entityTypeDisplayName": "@medicareID",
+          "mandatory": true,
+          "prompts": [
+            "Please provide your Medicare ID number."
+          ]
+        },
+        {
+          "name": "lastName",
+          "displayName": "Last Name",
+          "entityTypeDisplayName": "@sys.any",
+          "mandatory": true,
+          "prompts": [
+            "Please provide your last name for verification."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CheckClaimStatus",
+      "displayName": "CheckClaimStatus",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "What's the status of my claim?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Check claim number "
+            },
+            {
+              "text": "CLM-2024-001",
+              "entityType": "@claimNumber",
+              "alias": "claimNumber"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Where is my claim?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Has my claim been processed?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "I want to track my claim"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Look up claim "
+            },
+            {
+              "text": "CLM-2024-005",
+              "entityType": "@claimNumber",
+              "alias": "claimNumber"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Status of claim "
+            },
+            {
+              "text": "CLM-2024-010",
+              "entityType": "@claimNumber",
+              "alias": "claimNumber"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Check my claim"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Find claim status"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Track my medical claim"
+            }
+          ]
+        }
+      ],
+      "action": "check_claim_status",
+      "outputContexts": [],
+      "parameters": [
+        {
+          "name": "claimNumber",
+          "displayName": "Claim Number",
+          "entityTypeDisplayName": "@claimNumber",
+          "mandatory": true,
+          "prompts": [
+            "Please provide your claim number."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AskAboutBenefits",
+      "displayName": "AskAboutBenefits",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "What does "
+            },
+            {
+              "text": "Part A",
+              "entityType": "@benefitType",
+              "alias": "benefitType"
+            },
+            {
+              "text": " cover?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Tell me about "
+            },
+            {
+              "text": "dental",
+              "entityType": "@benefitType",
+              "alias": "benefitType"
+            },
+            {
+              "text": " benefits"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "What's included in my plan?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Explain Medicare "
+            },
+            {
+              "text": "Part B",
+              "entityType": "@benefitType",
+              "alias": "benefitType"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Do I have "
+            },
+            {
+              "text": "vision",
+              "entityType": "@benefitType",
+              "alias": "benefitType"
+            },
+            {
+              "text": " coverage?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "What benefits do I have?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Coverage for "
+            },
+            {
+              "text": "Part D",
+              "entityType": "@benefitType",
+              "alias": "benefitType"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Information about my benefits"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "What does my insurance cover?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Benefits information"
+            }
+          ]
+        }
+      ],
+      "action": "ask_about_benefits",
+      "outputContexts": [],
+      "parameters": [
+        {
+          "name": "benefitType",
+          "displayName": "Benefit Type",
+          "entityTypeDisplayName": "@benefitType",
+          "mandatory": true,
+          "prompts": [
+            "Which benefit type would you like to learn about? For example, Part A, Part B, Part D, dental, or vision."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FindProvider",
+      "displayName": "FindProvider",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "Find a doctor near me"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "I need a "
+            },
+            {
+              "text": "cardiologist",
+              "entityType": "@providerSpecialty",
+              "alias": "providerSpecialty"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Show me "
+            },
+            {
+              "text": "dentists",
+              "entityType": "@providerSpecialty",
+              "alias": "providerSpecialty"
+            },
+            {
+              "text": " in my area"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Where can I get care?"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "List available providers"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Find a "
+            },
+            {
+              "text": "primary care",
+              "entityType": "@providerSpecialty",
+              "alias": "providerSpecialty"
+            },
+            {
+              "text": " doctor"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Search for "
+            },
+            {
+              "text": "orthopedist",
+              "entityType": "@providerSpecialty",
+              "alias": "providerSpecialty"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Locate healthcare providers"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Doctor search"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Find medical specialist"
+            }
+          ]
+        }
+      ],
+      "action": "find_provider",
+      "outputContexts": [],
+      "parameters": [
+        {
+          "name": "providerSpecialty",
+          "displayName": "Provider Specialty",
+          "entityTypeDisplayName": "@providerSpecialty",
+          "mandatory": true,
+          "prompts": [
+            "What type of provider are you looking for? For example, primary care, cardiologist, dentist, or another specialty."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AgentEscalation",
+      "displayName": "AgentEscalation",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "I need to speak to someone"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Transfer me to an agent"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "This isn't helping"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "I want a human"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Connect me to support"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Talk to a representative"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Speak with a person"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Customer service"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Agent please"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Live person"
+            }
+          ]
+        }
+      ],
+      "action": "escalate_to_agent",
+      "outputContexts": [],
+      "parameters": []
+    },
+    {
+      "name": "Goodbye",
+      "displayName": "Goodbye",
+      "priority": 500000,
+      "trainingPhrases": [
+        {
+          "parts": [
+            {
+              "text": "Thank you"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Goodbye"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "That's all"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Exit"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "End chat"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Bye"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Thanks"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "Done"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "No more questions"
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "That's everything"
+            }
+          ]
+        }
+      ],
+      "action": "goodbye",
+      "outputContexts": [],
+      "parameters": []
+    }
+  ]
+}

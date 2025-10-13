@@ -1,0 +1,54 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Helper function to check if user owns the resource
+    function isOwner(medicareId) {
+      return isAuthenticated() && request.auth.token.medicareId == medicareId;
+    }
+    
+    // Beneficiaries collection
+    // Read: Only authenticated users can read their own data
+    // Write: No direct writes allowed (use Cloud Functions)
+    match /beneficiaries/{beneficiaryId} {
+      allow read: if isAuthenticated() && 
+                     resource.data.medicareId == request.auth.token.medicareId;
+      allow write: if false; // All writes go through Cloud Functions
+    }
+    
+    // Claims collection
+    // Read: Only authenticated users can read their own claims
+    // Write: No direct writes allowed (use Cloud Functions)
+    match /claims/{claimId} {
+      allow read: if isAuthenticated() && 
+                     resource.data.medicareId == request.auth.token.medicareId;
+      allow write: if false; // All writes go through Cloud Functions
+    }
+    
+    // Benefits collection
+    // Read: Anyone can read benefit information (public knowledge base)
+    // Write: No direct writes allowed (use Cloud Functions)
+    match /benefits/{benefitId} {
+      allow read: if true; // Public information
+      allow write: if false; // All writes go through Cloud Functions
+    }
+    
+    // Providers collection
+    // Read: Anyone can read provider information (public directory)
+    // Write: No direct writes allowed (use Cloud Functions)
+    match /providers/{providerId} {
+      allow read: if true; // Public information
+      allow write: if false; // All writes go through Cloud Functions
+    }
+    
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "claims": [
+    {
+      "claimId": "CLM-2024-001",
+      "medicareId": "123-45-6789",
+      "serviceDate": "2024-09-15",
+      "submissionDate": "2024-09-18",
+      "provider": {
+        "name": "Springfield General Hospital",
+        "npi": "1234567890",
+        "specialty": "Hospital"
+      },
+      "serviceType": "Inpatient Hospital Care",
+      "description": "Primary care visit for annual checkup",
+      "billedAmount": 250.00,
+      "approvedAmount": 200.00,
+      "patientResponsibility": 40.00,
+      "status": "Approved",
+      "statusDate": "2024-09-25",
+      "paymentDate": "2024-09-30",
+      "paymentAmount": 160.00,
+      "diagnosisCodes": ["Z00.00"],
+      "procedureCodes": ["99213"]
+    },
+    {
+      "claimId": "CLM-2024-002",
+      "medicareId": "234-56-7890",
+      "serviceDate": "2024-08-20",
+      "submissionDate": "2024-08-22",
+      "provider": {
+        "name": "Portland Cardiology Associates",
+        "npi": "2345678901",
+        "specialty": "Cardiology"
+      },
+      "serviceType": "Specialist Consultation",
+      "description": "Cardiology consultation for hypertension management",
+      "billedAmount": 450.00,
+      "approvedAmount": 380.00,
+      "patientResponsibility": 76.00,
+      "status": "Approved",
+      "statusDate": "2024-08-28",
+      "paymentDate": "2024-09-05",
+      "paymentAmount": 304.00,
+      "diagnosisCodes": ["I10"],
+      "procedureCodes": ["99204"]
+    },
+    {
+      "claimId": "CLM-2024-003",
+      "medicareId": "345-67-8901",
+      "serviceDate": "2024-10-01",
+      "submissionDate": "2024-10-03",
+      "provider": {
+        "name": "Austin Vision Center",
+        "npi": "3456789012",
+        "specialty": "Ophthalmology"
+      },
+      "serviceType": "Vision Exam",
+      "description": "Routine eye examination and prescription update",
+      "billedAmount": 150.00,
+      "approvedAmount": 120.00,
+      "patientResponsibility": 24.00,
+      "status": "Pending",
+      "statusDate": "2024-10-03",
+      "paymentDate": null,
+      "paymentAmount": null,
+      "diagnosisCodes": ["Z01.00"],
+      "procedureCodes": ["92004"],
+      "notes": "Claim is under review. Expected processing within 14 business days."
+    },
+    {
+      "claimId": "CLM-2024-004",
+      "medicareId": "456-78-9012",
+      "serviceDate": "2024-09-10",
+      "submissionDate": "2024-09-12",
+      "provider": {
+        "name": "Seattle Orthopedic Clinic",
+        "npi": "4567890123",
+        "specialty": "Orthopedics"
+      },
+      "serviceType": "X-Ray Imaging",
+      "description": "X-ray of right knee for pain assessment",
+      "billedAmount": 320.00,
+      "approvedAmount": 280.00,
+      "patientResponsibility": 56.00,
+      "status": "Approved",
+      "statusDate": "2024-09-18",
+      "paymentDate": "2024-09-25",
+      "paymentAmount": 224.00,
+      "diagnosisCodes": ["M25.561"],
+      "procedureCodes": ["73560"]
+    },
+    {
+      "claimId": "CLM-2024-005",
+      "medicareId": "567-89-0123",
+      "serviceDate": "2024-07-25",
+      "submissionDate": "2024-07-27",
+      "provider": {
+        "name": "Denver Dental Group",
+        "npi": "5678901234",
+        "specialty": "Dentistry"
+      },
+      "serviceType": "Dental Cleaning",
+      "description": "Routine dental cleaning and examination",
+      "billedAmount": 180.00,
+      "approvedAmount": 150.00,
+      "patientResponsibility": 30.00,
+      "status": "Approved",
+      "statusDate": "2024-08-02",
+      "paymentDate": "2024-08-10",
+      "paymentAmount": 120.00,
+      "diagnosisCodes": ["Z01.20"],
+      "procedureCodes": ["D1110"]
+    },
+    {
+      "claimId": "CLM-2024-006",
+      "medicareId": "123-45-6789",
+      "serviceDate": "2024-06-15",
+      "submissionDate": "2024-06-18",
+      "provider": {
+        "name": "Springfield Pharmacy",
+        "npi": "6789012345",
+        "specialty": "Pharmacy"
+      },
+      "serviceType": "Prescription Medication",
+      "description": "30-day supply of prescribed medication",
+      "billedAmount": 85.00,
+      "approvedAmount": 75.00,
+      "patientResponsibility": 15.00,
+      "status": "Approved",
+      "statusDate": "2024-06-20",
+      "paymentDate": "2024-06-25",
+      "paymentAmount": 60.00,
+      "diagnosisCodes": ["E11.9"],
+      "procedureCodes": ["99999"]
+    },
+    {
+      "claimId": "CLM-2024-007",
+      "medicareId": "234-56-7890",
+      "serviceDate": "2024-09-05",
+      "submissionDate": "2024-09-08",
+      "provider": {
+        "name": "Portland Medical Laboratory",
+        "npi": "7890123456",
+        "specialty": "Laboratory"
+      },
+      "serviceType": "Blood Work",
+      "description": "Comprehensive metabolic panel and lipid panel",
+      "billedAmount": 220.00,
+      "approvedAmount": 180.00,
+      "patientResponsibility": 36.00,
+      "status": "Denied",
+      "statusDate": "2024-09-15",
+      "paymentDate": null,
+      "paymentAmount": null,
+      "diagnosisCodes": ["Z00.00"],
+      "procedureCodes": ["80053", "80061"],
+      "denialReason": "Service not covered - routine screening without medical necessity",
+      "appealDeadline": "2024-12-15"
+    },
+    {
+      "claimId": "CLM-2024-008",
+      "medicareId": "345-67-8901",
+      "serviceDate": "2024-08-12",
+      "submissionDate": "2024-08-15",
+      "provider": {
+        "name": "Austin Physical Therapy Center",
+        "npi": "8901234567",
+        "specialty": "Physical Therapy"
+      },
+      "serviceType": "Physical Therapy",
+      "description": "Physical therapy session for lower back pain",
+      "billedAmount": 175.00,
+      "approvedAmount": 145.00,
+      "patientResponsibility": 29.00,
+      "status": "Approved",
+      "statusDate": "2024-08-20",
+      "paymentDate": "2024-08-28",
+      "paymentAmount": 116.00,
+      "diagnosisCodes": ["M54.5"],
+      "procedureCodes": ["97110"]
+    },
+    {
+      "claimId": "CLM-2024-009",
+      "medicareId": "456-78-9012",
+      "serviceDate": "2024-10-05",
+      "submissionDate": "2024-10-07",
+      "provider": {
+        "name": "Seattle Dermatology Associates",
+        "npi": "9012345678",
+        "specialty": "Dermatology"
+      },
+      "serviceType": "Skin Examination",
+      "description": "Annual skin cancer screening",
+      "billedAmount": 200.00,
+      "approvedAmount": 165.00,
+      "patientResponsibility": 33.00,
+      "status": "Pending",
+      "statusDate": "2024-10-07",
+      "paymentDate": null,
+      "paymentAmount": null,
+      "diagnosisCodes": ["Z12.83"],
+      "procedureCodes": ["99203"],
+      "notes": "Additional documentation requested from provider."
+    },
+    {
+      "claimId": "CLM-2024-010",
+      "medicareId": "567-89-0123",
+      "serviceDate": "2024-09-28",
+      "submissionDate": "2024-09-30",
+      "provider": {
+        "name": "Denver Sleep Center",
+        "npi": "0123456789",
+        "specialty": "Sleep Medicine"
+      },
+      "serviceType": "Sleep Study",
+      "description": "Overnight sleep study for sleep apnea evaluation",
+      "billedAmount": 1250.00,
+      "approvedAmount": 1050.00,
+      "patientResponsibility": 210.00,
+      "status": "Approved",
+      "statusDate": "2024-10-08",
+      "paymentDate": "2024-10-15",
+      "paymentAmount": 840.00,
+      "diagnosisCodes": ["G47.33"],
+      "procedureCodes": ["95810"]
+    }
+  ]
+}

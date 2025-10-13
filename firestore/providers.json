@@ -1,0 +1,254 @@
+{
+  "providers": [
+    {
+      "providerId": "PRV-001",
+      "name": "Dr. Sarah Mitchell",
+      "specialty": "primary care",
+      "npi": "1234567890",
+      "practiceName": "Springfield Family Medicine",
+      "address": {
+        "street": "100 Medical Plaza",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62701"
+      },
+      "phone": "(555) 111-2222",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English", "Spanish"],
+      "officeHours": {
+        "monday": "8:00 AM - 5:00 PM",
+        "tuesday": "8:00 AM - 5:00 PM",
+        "wednesday": "8:00 AM - 5:00 PM",
+        "thursday": "8:00 AM - 5:00 PM",
+        "friday": "8:00 AM - 3:00 PM"
+      },
+      "rating": 4.8,
+      "reviews": 156
+    },
+    {
+      "providerId": "PRV-002",
+      "name": "Dr. Michael Chen",
+      "specialty": "cardiologist",
+      "npi": "2345678901",
+      "practiceName": "Portland Heart Center",
+      "address": {
+        "street": "250 Cardiology Drive",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201"
+      },
+      "phone": "(555) 222-3333",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English", "Mandarin"],
+      "officeHours": {
+        "monday": "9:00 AM - 5:00 PM",
+        "tuesday": "9:00 AM - 5:00 PM",
+        "wednesday": "9:00 AM - 5:00 PM",
+        "thursday": "9:00 AM - 5:00 PM",
+        "friday": "9:00 AM - 4:00 PM"
+      },
+      "rating": 4.9,
+      "reviews": 203
+    },
+    {
+      "providerId": "PRV-003",
+      "name": "Dr. Emily Rodriguez",
+      "specialty": "dentist",
+      "npi": "3456789012",
+      "practiceName": "Austin Dental Care",
+      "address": {
+        "street": "500 Smile Boulevard",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701"
+      },
+      "phone": "(555) 333-4444",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English", "Spanish"],
+      "officeHours": {
+        "monday": "8:00 AM - 6:00 PM",
+        "tuesday": "8:00 AM - 6:00 PM",
+        "wednesday": "8:00 AM - 6:00 PM",
+        "thursday": "8:00 AM - 6:00 PM",
+        "friday": "8:00 AM - 2:00 PM"
+      },
+      "rating": 4.7,
+      "reviews": 128
+    },
+    {
+      "providerId": "PRV-004",
+      "name": "Dr. David Thompson",
+      "specialty": "orthopedist",
+      "npi": "4567890123",
+      "practiceName": "Seattle Orthopedic Center",
+      "address": {
+        "street": "750 Bone & Joint Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101"
+      },
+      "phone": "(555) 444-5555",
+      "acceptingNewPatients": false,
+      "languagesSpoken": ["English"],
+      "officeHours": {
+        "monday": "7:00 AM - 4:00 PM",
+        "tuesday": "7:00 AM - 4:00 PM",
+        "wednesday": "7:00 AM - 4:00 PM",
+        "thursday": "7:00 AM - 4:00 PM",
+        "friday": "7:00 AM - 12:00 PM"
+      },
+      "rating": 4.9,
+      "reviews": 275
+    },
+    {
+      "providerId": "PRV-005",
+      "name": "Dr. Jennifer Park",
+      "specialty": "ophthalmologist",
+      "npi": "5678901234",
+      "practiceName": "Denver Eye Institute",
+      "address": {
+        "street": "325 Vision Street",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201"
+      },
+      "phone": "(555) 555-6666",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English", "Korean"],
+      "officeHours": {
+        "monday": "8:30 AM - 5:00 PM",
+        "tuesday": "8:30 AM - 5:00 PM",
+        "wednesday": "8:30 AM - 5:00 PM",
+        "thursday": "8:30 AM - 5:00 PM",
+        "friday": "8:30 AM - 3:00 PM"
+      },
+      "rating": 4.8,
+      "reviews": 189
+    },
+    {
+      "providerId": "PRV-006",
+      "name": "Dr. Robert Anderson",
+      "specialty": "dermatologist",
+      "npi": "6789012345",
+      "practiceName": "Springfield Skin Clinic",
+      "address": {
+        "street": "200 Dermatology Lane",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62701"
+      },
+      "phone": "(555) 666-7777",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English"],
+      "officeHours": {
+        "monday": "9:00 AM - 5:00 PM",
+        "tuesday": "9:00 AM - 5:00 PM",
+        "wednesday": "9:00 AM - 5:00 PM",
+        "thursday": "9:00 AM - 5:00 PM",
+        "friday": "9:00 AM - 4:00 PM"
+      },
+      "rating": 4.6,
+      "reviews": 142
+    },
+    {
+      "providerId": "PRV-007",
+      "name": "Dr. Lisa Washington",
+      "specialty": "neurologist",
+      "npi": "7890123456",
+      "practiceName": "Portland Neurology Center",
+      "address": {
+        "street": "450 Brain Health Parkway",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201"
+      },
+      "phone": "(555) 777-8888",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English"],
+      "officeHours": {
+        "monday": "8:00 AM - 5:00 PM",
+        "tuesday": "8:00 AM - 5:00 PM",
+        "wednesday": "8:00 AM - 5:00 PM",
+        "thursday": "8:00 AM - 5:00 PM",
+        "friday": "8:00 AM - 3:00 PM"
+      },
+      "rating": 4.9,
+      "reviews": 218
+    },
+    {
+      "providerId": "PRV-008",
+      "name": "Dr. James Martinez",
+      "specialty": "endocrinologist",
+      "npi": "8901234567",
+      "practiceName": "Austin Diabetes & Endocrine Center",
+      "address": {
+        "street": "600 Hormone Health Drive",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701"
+      },
+      "phone": "(555) 888-9999",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English", "Spanish"],
+      "officeHours": {
+        "monday": "8:00 AM - 5:00 PM",
+        "tuesday": "8:00 AM - 5:00 PM",
+        "wednesday": "8:00 AM - 5:00 PM",
+        "thursday": "8:00 AM - 5:00 PM",
+        "friday": "8:00 AM - 12:00 PM"
+      },
+      "rating": 4.7,
+      "reviews": 167
+    },
+    {
+      "providerId": "PRV-009",
+      "name": "Dr. Amanda Lewis",
+      "specialty": "primary care",
+      "npi": "9012345678",
+      "practiceName": "Seattle Family Health",
+      "address": {
+        "street": "800 Primary Care Avenue",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101"
+      },
+      "phone": "(555) 999-0000",
+      "acceptingNewPatients": true,
+      "languagesSpoken": ["English", "French"],
+      "officeHours": {
+        "monday": "7:00 AM - 6:00 PM",
+        "tuesday": "7:00 AM - 6:00 PM",
+        "wednesday": "7:00 AM - 6:00 PM",
+        "thursday": "7:00 AM - 6:00 PM",
+        "friday": "7:00 AM - 4:00 PM"
+      },
+      "rating": 4.8,
+      "reviews": 234
+    },
+    {
+      "providerId": "PRV-010",
+      "name": "Dr. Christopher Young",
+      "specialty": "gastroenterologist",
+      "npi": "0123456789",
+      "practiceName": "Denver Digestive Health",
+      "address": {
+        "street": "900 GI Care Boulevard",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201"
+      },
+      "phone": "(555) 000-1111",
+      "acceptingNewPatients": false,
+      "languagesSpoken": ["English"],
+      "officeHours": {
+        "monday": "8:00 AM - 5:00 PM",
+        "tuesday": "8:00 AM - 5:00 PM",
+        "wednesday": "8:00 AM - 5:00 PM",
+        "thursday": "8:00 AM - 5:00 PM",
+        "friday": "8:00 AM - 2:00 PM"
+      },
+      "rating": 4.9,
+      "reviews": 196
+    }
+  ]
+}
