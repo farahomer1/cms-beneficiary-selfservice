@@ -1,0 +1,102 @@
+[
+  {
+    "id": "KB001",
+    "title": "Understanding Medicare Claim Denial Codes",
+    "topic": "Billing",
+    "content": "Medicare claim denials are categorized by specific codes that indicate the reason for rejection. Common denial codes include CO-16 (Claim lacks information), CO-18 (Duplicate claim), and CO-22 (Payment adjusted because payment has already been made for this service). When a claim is denied, providers must review the Explanation of Benefits (EOB) to identify the specific code and corresponding reason. To resolve denials, ensure all required documentation is submitted, verify patient eligibility before service delivery, and confirm that coding is accurate and specific. For CO-16 denials, resubmit with complete medical records and supporting documentation. For duplicate submissions (CO-18), check your billing system to prevent multiple submissions. Most denials can be appealed within 120 days of the initial determination.",
+    "keywords": ["denial", "billing", "code", "CO-16", "CO-18", "CO-22", "claim", "rejection"],
+    "lastUpdated": "2024-10-01",
+    "category": "Claims Processing",
+    "subcategory": "Denials and Appeals"
+  },
+  {
+    "id": "KB002",
+    "title": "ICD-10 Coding Best Practices for Medicare Claims",
+    "topic": "Coding",
+    "content": "Accurate ICD-10 coding is essential for Medicare claim approval and appropriate reimbursement. Providers must code to the highest level of specificity available in the ICD-10-CM manual. This means using the full code including all applicable characters (typically 3-7 characters). Common coding errors include using unspecified codes when more specific options exist, failing to code co-morbidities that affect treatment, and incorrect sequencing of primary and secondary diagnoses. Best practices include: (1) Code all documented conditions that affect patient care during the encounter, (2) Use the most specific code available, (3) Sequence the principal diagnosis first, followed by secondary diagnoses in order of importance, (4) Review annual ICD-10 updates as codes are added, revised, or deleted each October 1st. Medicare requires valid ICD-10 codes for all Part A and Part B claims.",
+    "keywords": ["ICD-10", "coding", "diagnosis", "specificity", "claims", "documentation"],
+    "lastUpdated": "2024-09-28",
+    "category": "Medical Coding",
+    "subcategory": "ICD-10-CM"
+  },
+  {
+    "id": "KB003",
+    "title": "Medicare Part B Incident-to Billing Guidelines",
+    "topic": "Billing",
+    "content": "Incident-to billing allows services provided by non-physician practitioners (NPPs) such as nurse practitioners or physician assistants to be billed under the supervising physician's National Provider Identifier (NPI) at 100% of the physician fee schedule. To qualify for incident-to billing: (1) The physician must have initiated the course of treatment and remain actively involved in the patient's care, (2) The service must be commonly rendered in a physician's office, (3) Direct supervision is required - the physician must be immediately available in the office suite, (4) The service must be medically necessary and within the NPP's scope of practice. Incident-to billing is NOT permitted for new patient visits, new problems, or hospital/facility settings. When these requirements aren't met, bill under the NPP's NPI at 85% of the physician fee schedule. Proper documentation must demonstrate the physician's involvement and supervision.",
+    "keywords": ["incident-to", "billing", "part b", "NPP", "supervision", "physician", "nurse practitioner"],
+    "lastUpdated": "2024-09-25",
+    "category": "Billing Guidelines",
+    "subcategory": "Part B Coverage"
+  },
+  {
+    "id": "KB004",
+    "title": "Advance Beneficiary Notice (ABN) Requirements",
+    "topic": "Coverage",
+    "content": "An Advance Beneficiary Notice of Noncoverage (ABN) is a written notice that providers must give Medicare beneficiaries before furnishing items or services that Medicare may not cover. The ABN must be issued when: (1) You believe Medicare will not pay for a specific item or service, (2) The beneficiary could be held financially responsible, (3) The item/service is not on Medicare's statutory non-coverage list. The ABN must be issued before the service is provided and include: the specific item/service, reason Medicare may not pay, estimated cost, and beneficiary's choice to receive or decline the service. Valid ABNs protect providers from beneficiary complaints and allow collection of payment if Medicare denies the claim. Use the CMS-R-131 form (revised March 2023). ABNs are not required for services that are never covered by Medicare (statutory exclusions) or for beneficiaries in Medicare Advantage plans.",
+    "keywords": ["ABN", "advance beneficiary notice", "coverage", "noncoverage", "CMS-R-131", "financial liability"],
+    "lastUpdated": "2024-10-05",
+    "category": "Coverage Policies",
+    "subcategory": "Beneficiary Notices"
+  },
+  {
+    "id": "KB005",
+    "title": "Telehealth Services and Remote Patient Monitoring",
+    "topic": "Coverage",
+    "content": "Medicare coverage for telehealth services has evolved significantly. As of 2024, Medicare covers telehealth services for beneficiaries in rural and urban areas. Eligible services include office visits (99202-99215), mental health services, and certain preventive services. Providers must use appropriate Place of Service (POS) code 02 for telehealth and append modifier 95 to the CPT code. The interactive telecommunications system must be audio and video - audio-only services have limited coverage. Remote Patient Monitoring (RPM) services (CPT 99453-99458, 99091) allow providers to monitor patients with chronic conditions using digital devices. RPM requires: 16 days of data transmission per 30-day period, patient consent, and use of FDA-approved medical devices. Both patient setup/education (99453) and device supply (99454) can be billed once per episode. Monthly monitoring (99457, 99458) requires at least 20 minutes of interactive communication. Document all telehealth encounters thoroughly, including patient location and consent.",
+    "keywords": ["telehealth", "remote monitoring", "RPM", "virtual care", "POS 02", "modifier 95"],
+    "lastUpdated": "2024-10-10",
+    "category": "Coverage Policies",
+    "subcategory": "Telehealth"
+  },
+  {
+    "id": "KB006",
+    "title": "Medicare Secondary Payer (MSP) Compliance",
+    "topic": "Billing",
+    "content": "Medicare Secondary Payer (MSP) rules determine when Medicare pays primary or secondary to other insurance. Common MSP situations include: (1) Working Aged - If patient or spouse is actively employed and covered by an employer group health plan (GHP) with 20+ employees, the GHP pays primary, (2) End-Stage Renal Disease (ESRD) - During the 30-month coordination period, the GHP pays primary, (3) Liability Insurance - In accident cases, liability insurance pays first, (4) Workers' Compensation - Always primary to Medicare. Providers must query the Coordination of Benefits Contractor (COBC) before submitting Medicare claims to verify primary payer status. Submit claims to the primary payer first, then submit secondary claims to Medicare with the primary payer's Explanation of Benefits (EOB). Failure to comply with MSP requirements can result in claim denials and recovery of mistaken payments. Use the CMS-L564 questionnaire to collect MSP information from beneficiaries. Report MSP situations to the Benefits Coordination & Recovery Center (BCRC) within required timeframes.",
+    "keywords": ["MSP", "secondary payer", "primary payer", "coordination of benefits", "working aged", "liability"],
+    "lastUpdated": "2024-09-30",
+    "category": "Claims Processing",
+    "subcategory": "Coordination of Benefits"
+  },
+  {
+    "id": "KB007",
+    "title": "Modifier 25: Significant, Separately Identifiable E/M Service",
+    "topic": "Coding",
+    "content": "Modifier 25 is appended to an Evaluation and Management (E/M) code when a significant, separately identifiable E/M service is performed on the same day as a procedure or other service. Key requirements: (1) The E/M service must be above and beyond the usual pre- and post-operative work of the procedure, (2) The E/M must be medically necessary and separately identifiable, (3) Different diagnoses are not required - the same condition can support both services if documentation supports distinct work. Common scenarios include: identifying a new problem during a procedure visit, managing an unrelated condition, or addressing a significant problem that requires substantial additional work. Documentation must clearly show the separate nature of the E/M service - many carriers require separate notes or clear distinction in the medical record. Overuse of modifier 25 is a frequent audit target. Medicare contractors may require additional documentation to justify the modifier. Do not use modifier 25 when the E/M service is routine follow-up or minimal work related to the procedure.",
+    "keywords": ["modifier 25", "E/M", "evaluation", "procedure", "separately identifiable", "significant"],
+    "lastUpdated": "2024-10-02",
+    "category": "Medical Coding",
+    "subcategory": "Modifiers"
+  },
+  {
+    "id": "KB008",
+    "title": "Prior Authorization Requirements for Part B Drugs",
+    "topic": "Coverage",
+    "content": "Medicare Part B covers certain drugs administered in physician offices, outpatient hospitals, and other settings. Some high-cost Part B drugs require prior authorization before Medicare will pay. As of 2024, prior authorization is required for drugs including certain monoclonal antibodies, immunosuppressants, and other specialty medications identified on the Medicare Part B Drug Prior Authorization List. To obtain prior authorization: (1) Submit request through the Prior Authorization Portal or to your MAC, (2) Provide clinical documentation supporting medical necessity, (3) Include patient's diagnosis codes and failed alternative treatments (if applicable). Provisional affirmative decisions are valid for 12 months. Prior authorization decisions are made within 10 business days for standard requests and 48 hours for expedited requests. Services rendered without proper prior authorization may be denied. Exceptions exist for emergency situations and when the drug is being used for an FDA-approved indication with supporting clinical evidence. Providers should verify prior authorization requirements before administering high-cost drugs to avoid claim denials.",
+    "keywords": ["prior authorization", "part b drugs", "monoclonal antibodies", "specialty medications", "medical necessity"],
+    "lastUpdated": "2024-10-08",
+    "category": "Coverage Policies",
+    "subcategory": "Part B Drugs"
+  },
+  {
+    "id": "KB009",
+    "title": "Medicare Advantage Organization (MAO) Billing Differences",
+    "topic": "Billing",
+    "content": "Medicare Advantage (MA) plans operate differently from Original Medicare, requiring providers to understand key billing distinctions. Unlike Original Medicare, MA plans are paid a per-member per-month capitated rate and have networks of contracted providers. Important differences: (1) Check patient's MA plan enrollment before each service - beneficiaries can change plans, (2) Verify in-network status and referral requirements, (3) MA plans may require prior authorization for services covered without authorization under Original Medicare, (4) Submit claims directly to the MA plan, not to the Medicare Administrative Contractor (MAC), (5) MA plans may have different coverage policies and billing rules than Original Medicare, (6) Appeal denials through the MA plan's process, not the MAC. Providers must comply with both CMS regulations and the specific MA plan's requirements. MA plans must cover everything Original Medicare covers but may offer additional benefits. Never balance bill MA enrollees for covered services beyond plan cost-sharing. Use the plan's provider portal or clearinghouse for claims submission and eligibility verification.",
+    "keywords": ["medicare advantage", "MAO", "MA plan", "capitated", "network", "prior authorization", "billing"],
+    "lastUpdated": "2024-09-27",
+    "category": "Billing Guidelines",
+    "subcategory": "Medicare Advantage"
+  },
+  {
+    "id": "KB010",
+    "title": "Global Surgery Package and Post-Operative Visits",
+    "topic": "Billing",
+    "content": "Medicare's global surgery package includes all related services provided during a specific time period surrounding the surgical procedure. The global period is either 0, 10, or 90 days based on the procedure code. Services included in the global package: (1) Pre-operative visit on day of or day before surgery, (2) Intra-operative services that are a normal part of the procedure, (3) Post-operative visits during the global period, (4) Post-operative pain management by the surgeon, (5) Supplies (except those that are separately billable), (6) Miscellaneous services like dressing changes. Services NOT included (can be billed separately): treatment of complications requiring return to OR (modifier 78), unrelated services during global period (modifier 24), staged or related procedures (modifier 58), and services by different physicians in the same group (if documented separately). Use modifier 79 for unrelated procedures during the post-operative period. Documentation must clearly indicate the nature of post-operative visits and distinguish between included follow-up and separately billable services. Billing services included in the global package can result in claim denials and potential fraud investigations.",
+    "keywords": ["global surgery", "post-operative", "global period", "modifier 24", "modifier 78", "surgical package"],
+    "lastUpdated": "2024-10-03",
+    "category": "Billing Guidelines",
+    "subcategory": "Surgical Services"
+  }
+]

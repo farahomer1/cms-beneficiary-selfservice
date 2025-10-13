@@ -1,0 +1,139 @@
+{
+  "intents": [
+    {
+      "name": "ProviderAuthentication",
+      "displayName": "Provider Authentication",
+      "trainingPhrases": [
+        "My NPI is 1234567890",
+        "I'm calling from Springfield Medical Center, my NPI number is 1234567890",
+        "This is Dr. Johnson, NPI 1234567890",
+        "My National Provider Identifier is 1234567890",
+        "Provider number 1234567890",
+        "I'm a healthcare provider, my NPI is 1234567890",
+        "Calling about Medicare billing, my NPI is 1234567890",
+        "ID number 1234567890",
+        "My provider identification is 1234567890",
+        "NPI 1234567890"
+      ],
+      "parameters": [
+        {
+          "name": "npiNumber",
+          "entityType": "@npiNumber",
+          "required": true,
+          "prompts": [
+            "Could you please provide your 10-digit National Provider Identifier (NPI)?",
+            "What is your NPI number?",
+            "I'll need your NPI to verify your identity. What is it?"
+          ]
+        }
+      ],
+      "webhookEnabled": true,
+      "webhookTag": "authenticateProvider",
+      "fulfillmentMessages": [
+        "Thank you for providing your NPI. Let me verify your information..."
+      ]
+    },
+    {
+      "name": "CheckClaimStatusCode",
+      "displayName": "Check Claim Status Code",
+      "trainingPhrases": [
+        "I need to check claim status for CLM-2024-001",
+        "What's the status of my claim CLM-2024-001?",
+        "Can you look up claim number CLM-2024-001?",
+        "I submitted claim CLM-2024-001 last week, what's happening with it?",
+        "Claim CLM-2024-001 was denied, why?",
+        "Status of claim CLM-2024-001",
+        "I want to know about claim CLM-2024-001",
+        "Check claim CLM-2024-001",
+        "What happened to my claim CLM-2024-001?",
+        "I'm calling about a claim denial"
+      ],
+      "parameters": [
+        {
+          "name": "claimId",
+          "entityType": "@claimId",
+          "required": true,
+          "prompts": [
+            "What is the claim number you'd like me to check?",
+            "Please provide the claim ID. It should be in the format CLM-YYYY-NNN.",
+            "Which claim number do you need information about?"
+          ]
+        }
+      ],
+      "webhookEnabled": true,
+      "webhookTag": "checkClaimStatus",
+      "fulfillmentMessages": [
+        "Let me look up that claim for you...",
+        "I'm checking on claim $claimId now..."
+      ]
+    },
+    {
+      "name": "PolicyQuestion",
+      "displayName": "Policy Question",
+      "trainingPhrases": [
+        "I have a question about billing policies",
+        "Can you explain the incident-to billing rules?",
+        "What are the requirements for telehealth services?",
+        "I need clarification on ICD-10 coding",
+        "Tell me about Medicare Part B coverage",
+        "How do I use modifier 25?",
+        "What is the global surgery period?",
+        "I don't understand the prior authorization process",
+        "Can you explain MSP rules?",
+        "What documentation do I need for claims?",
+        "Policy question about coverage",
+        "I need help understanding billing guidelines"
+      ],
+      "parameters": [
+        {
+          "name": "policyTopic",
+          "entityType": "@policyTopic",
+          "required": true,
+          "prompts": [
+            "What specific policy topic can I help you with?",
+            "Which area do you have questions about? For example: billing, coding, coverage, or enrollment?",
+            "What policy would you like more information on?"
+          ]
+        }
+      ],
+      "webhookEnabled": true,
+      "webhookTag": "policyQuestion",
+      "fulfillmentMessages": [
+        "I can help you with that policy question. Let me provide some information...",
+        "Let me look up the policy guidelines for $policyTopic..."
+      ]
+    },
+    {
+      "name": "RequestLiveAgent",
+      "displayName": "Request Live Agent",
+      "trainingPhrases": [
+        "I need to speak with a live person",
+        "Can I talk to a human agent?",
+        "Transfer me to an agent",
+        "I want to speak with someone",
+        "This is urgent, I need a live agent",
+        "Connect me to customer service",
+        "I need help from a real person",
+        "Can you transfer me to a representative?",
+        "I'd like to speak with an agent",
+        "Put me through to someone who can help",
+        "Agent please",
+        "Live support needed"
+      ],
+      "parameters": [],
+      "webhookEnabled": true,
+      "webhookTag": "requestLiveAgent",
+      "fulfillmentMessages": [
+        "I'll connect you with a live agent right away.",
+        "Let me transfer you to one of our specialists who can assist you further.",
+        "I'm connecting you to a live agent now. Please hold for just a moment."
+      ]
+    }
+  ],
+  "metadata": {
+    "description": "Provider-specific intents for CMS call center system",
+    "version": "1.0",
+    "created": "2024-10-13",
+    "useCase": "Provider Agent Assist"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "entities": [
+    {
+      "name": "npiNumber",
+      "displayName": "NPI Number",
+      "kind": "KIND_REGEXP",
+      "autoExpansionMode": "AUTO_EXPANSION_MODE_DEFAULT",
+      "entities": [
+        {
+          "value": "\\d{10}",
+          "synonyms": []
+        }
+      ],
+      "regexp": "\\d{10}",
+      "examples": [
+        "1234567890",
+        "2345678901",
+        "3456789012",
+        "4567890123",
+        "5678901234"
+      ],
+      "description": "10-digit National Provider Identifier (NPI) used to identify healthcare providers"
+    },
+    {
+      "name": "claimId",
+      "displayName": "Claim ID",
+      "kind": "KIND_REGEXP",
+      "autoExpansionMode": "AUTO_EXPANSION_MODE_DEFAULT",
+      "entities": [
+        {
+          "value": "CLM-\\d{4}-\\d{3}",
+          "synonyms": []
+        }
+      ],
+      "regexp": "CLM-\\d{4}-\\d{3}",
+      "examples": [
+        "CLM-2024-001",
+        "CLM-2024-002",
+        "CLM-2023-150",
+        "CLM-2024-999"
+      ],
+      "description": "Medicare claim identifier in format CLM-YYYY-NNN"
+    },
+    {
+      "name": "policyTopic",
+      "displayName": "Policy Topic",
+      "kind": "KIND_MAP",
+      "autoExpansionMode": "AUTO_EXPANSION_MODE_DEFAULT",
+      "entities": [
+        {
+          "value": "Billing",
+          "synonyms": [
+            "billing",
+            "payment",
+            "reimbursement",
+            "invoice",
+            "charges",
+            "billing process",
+            "how to bill",
+            "billing rules",
+            "billing guidelines"
+          ]
+        },
+        {
+          "value": "Coding",
+          "synonyms": [
+            "coding",
+            "ICD-10",
+            "ICD10",
+            "CPT",
+            "diagnosis codes",
+            "procedure codes",
+            "medical coding",
+            "code",
+            "codes"
+          ]
+        },
+        {
+          "value": "Coverage",
+          "synonyms": [
+            "coverage",
+            "covered services",
+            "what's covered",
+            "benefits",
+            "benefit coverage",
+            "Medicare coverage",
+            "Part A",
+            "Part B",
+            "Part D",
+            "covered",
+            "not covered"
+          ]
+        },
+        {
+          "value": "Prior Authorization",
+          "synonyms": [
+            "prior authorization",
+            "pre-authorization",
+            "prior auth",
+            "pre-auth",
+            "authorization",
+            "approval",
+            "pre-approval"
+          ]
+        },
+        {
+          "value": "Telehealth",
+          "synonyms": [
+            "telehealth",
+            "telemedicine",
+            "virtual visit",
+            "remote care",
+            "video visit",
+            "online visit",
+            "remote patient monitoring",
+            "RPM"
+          ]
+        },
+        {
+          "value": "Modifiers",
+          "synonyms": [
+            "modifier",
+            "modifiers",
+            "modifier 25",
+            "modifier 59",
+            "modifier 78",
+            "modifier 79",
+            "billing modifier",
+            "CPT modifier"
+          ]
+        },
+        {
+          "value": "Global Surgery",
+          "synonyms": [
+            "global surgery",
+            "global period",
+            "surgical package",
+            "post-operative",
+            "post-op",
+            "global surgical package"
+          ]
+        },
+        {
+          "value": "Medicare Secondary Payer",
+          "synonyms": [
+            "MSP",
+            "secondary payer",
+            "primary payer",
+            "coordination of benefits",
+            "COB",
+            "other insurance"
+          ]
+        },
+        {
+          "value": "Incident-to Billing",
+          "synonyms": [
+            "incident-to",
+            "incident to",
+            "NPP billing",
+            "nurse practitioner billing",
+            "PA billing",
+            "physician assistant"
+          ]
+        },
+        {
+          "value": "ABN",
+          "synonyms": [
+            "ABN",
+            "advance beneficiary notice",
+            "notice of noncoverage",
+            "advance notice",
+            "beneficiary notice"
+          ]
+        },
+        {
+          "value": "Enrollment",
+          "synonyms": [
+            "enrollment",
+            "provider enrollment",
+            "registration",
+            "credentialing",
+            "PECOS",
+            "enroll"
+          ]
+        },
+        {
+          "value": "Claim Denial",
+          "synonyms": [
+            "denial",
+            "denied claim",
+            "claim rejection",
+            "rejected claim",
+            "denial code",
+            "CO-16",
+            "CO-18",
+            "CO-22",
+            "denial codes"
+          ]
+        },
+        {
+          "value": "Documentation",
+          "synonyms": [
+            "documentation",
+            "medical records",
+            "documentation requirements",
+            "medical necessity",
+            "supporting documentation",
+            "records"
+          ]
+        },
+        {
+          "value": "Medicare Advantage",
+          "synonyms": [
+            "Medicare Advantage",
+            "MA plan",
+            "MAO",
+            "Part C",
+            "managed care"
+          ]
+        }
+      ],
+      "description": "Policy topics that providers commonly inquire about"
+    }
+  ],
+  "metadata": {
+    "description": "Provider-specific entity types for CMS call center system",
+    "version": "1.0",
+    "created": "2024-10-13",
+    "useCase": "Provider Agent Assist"
+  }
+}

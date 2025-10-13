@@ -1,0 +1,364 @@
+{
+  "flows": [
+    {
+      "name": "Provider Call Flow",
+      "displayName": "Provider Call Flow",
+      "description": "Main conversational flow for healthcare provider calls to CMS",
+      "transitionRoutes": [],
+      "eventHandlers": [],
+      "pages": [
+        {
+          "name": "Start Page",
+          "displayName": "Start Page",
+          "entryFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Thank you for calling CMS Provider Support. This call may be monitored or recorded for quality assurance. How can I assist you today?"
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "intent": "ProviderAuthentication",
+              "targetPage": "Authentication Page"
+            },
+            {
+              "intent": "RequestLiveAgent",
+              "targetPage": "Live Agent Transfer Page"
+            }
+          ]
+        },
+        {
+          "name": "Authentication Page",
+          "displayName": "Authentication Page",
+          "entryFulfillment": {
+            "webhook": "authenticateProvider",
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Thank you. Let me verify your information..."
+                  ]
+                }
+              }
+            ]
+          },
+          "form": {
+            "parameters": [
+              {
+                "displayName": "npiNumber",
+                "entityType": "@npiNumber",
+                "required": true,
+                "fillBehavior": {
+                  "initialPromptFulfillment": {
+                    "messages": [
+                      {
+                        "text": {
+                          "text": [
+                            "To get started, I'll need to verify your identity. Please provide your 10-digit National Provider Identifier, or NPI."
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "repromptEventHandlers": [
+                    {
+                      "event": "no-match-default",
+                      "triggerFulfillment": {
+                        "messages": [
+                          {
+                            "text": {
+                              "text": [
+                                "I didn't catch that. Please provide your 10-digit NPI number. For example, 1234567890."
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "condition": "$session.params.authenticationSuccess = true",
+              "targetPage": "Main Menu Page"
+            },
+            {
+              "condition": "$session.params.authenticationSuccess = false",
+              "targetPage": "Authentication Failed Page"
+            }
+          ]
+        },
+        {
+          "name": "Authentication Failed Page",
+          "displayName": "Authentication Failed Page",
+          "entryFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "I'm sorry, but I wasn't able to verify your NPI. This could be because the number isn't in our system or may have been entered incorrectly. Would you like to try again or speak with a live agent?"
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "intent": "ProviderAuthentication",
+              "targetPage": "Authentication Page"
+            },
+            {
+              "intent": "RequestLiveAgent",
+              "targetPage": "Live Agent Transfer Page"
+            }
+          ]
+        },
+        {
+          "name": "Main Menu Page",
+          "displayName": "Main Menu Page",
+          "entryFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Great! You're all set, $session.params.providerName. How can I help you today? I can assist with:\n\n• Checking claim status\n• Answering policy questions about billing, coding, or coverage\n• Connecting you with a live agent for complex issues"
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "intent": "CheckClaimStatusCode",
+              "targetPage": "Claim Status Page"
+            },
+            {
+              "intent": "PolicyQuestion",
+              "targetPage": "Policy Question Page"
+            },
+            {
+              "intent": "RequestLiveAgent",
+              "targetPage": "Live Agent Transfer Page"
+            }
+          ]
+        },
+        {
+          "name": "Claim Status Page",
+          "displayName": "Claim Status Page",
+          "entryFulfillment": {
+            "webhook": "checkClaimStatus",
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Let me look up that claim information for you..."
+                  ]
+                }
+              }
+            ]
+          },
+          "form": {
+            "parameters": [
+              {
+                "displayName": "claimId",
+                "entityType": "@claimId",
+                "required": true,
+                "fillBehavior": {
+                  "initialPromptFulfillment": {
+                    "messages": [
+                      {
+                        "text": {
+                          "text": [
+                            "What is the claim number you'd like me to check? It should be in the format CLM-YYYY-NNN, like CLM-2024-001."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "condition": "$session.params.claimFound = true",
+              "targetPage": "Follow Up Page"
+            },
+            {
+              "condition": "$session.params.claimFound = false",
+              "targetPage": "Claim Not Found Page"
+            }
+          ]
+        },
+        {
+          "name": "Claim Not Found Page",
+          "displayName": "Claim Not Found Page",
+          "entryFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "I wasn't able to find that claim in our system. This could mean:\n\n• The claim hasn't been processed yet\n• The claim number may be incorrect\n• The claim may be under a different provider NPI\n\nWould you like to try another claim number, or would you prefer to speak with a live agent who can investigate further?"
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "intent": "CheckClaimStatusCode",
+              "targetPage": "Claim Status Page"
+            },
+            {
+              "intent": "RequestLiveAgent",
+              "targetPage": "Live Agent Transfer Page"
+            }
+          ]
+        },
+        {
+          "name": "Policy Question Page",
+          "displayName": "Policy Question Page",
+          "entryFulfillment": {
+            "webhook": "policyQuestion",
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Let me provide information about that policy..."
+                  ]
+                }
+              }
+            ]
+          },
+          "form": {
+            "parameters": [
+              {
+                "displayName": "policyTopic",
+                "entityType": "@policyTopic",
+                "required": true,
+                "fillBehavior": {
+                  "initialPromptFulfillment": {
+                    "messages": [
+                      {
+                        "text": {
+                          "text": [
+                            "What specific policy topic can I help you with? For example: billing, coding, coverage, telehealth, or prior authorization."
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "condition": "true",
+              "targetPage": "Follow Up Page"
+            }
+          ]
+        },
+        {
+          "name": "Follow Up Page",
+          "displayName": "Follow Up Page",
+          "entryFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Is there anything else I can help you with today?"
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "intent": "CheckClaimStatusCode",
+              "targetPage": "Claim Status Page"
+            },
+            {
+              "intent": "PolicyQuestion",
+              "targetPage": "Policy Question Page"
+            },
+            {
+              "intent": "RequestLiveAgent",
+              "targetPage": "Live Agent Transfer Page"
+            },
+            {
+              "intent": "Goodbye",
+              "targetPage": "End Page"
+            }
+          ]
+        },
+        {
+          "name": "Live Agent Transfer Page",
+          "displayName": "Live Agent Transfer Page",
+          "entryFulfillment": {
+            "webhook": "requestLiveAgent",
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "I'm creating a support ticket and connecting you with a live agent now. They'll have access to our conversation and your provider information. Please hold for just a moment..."
+                  ]
+                }
+              },
+              {
+                "text": {
+                  "text": [
+                    "**Agent Assist Data Ready**\n\nThe live agent will see:\n• Conversation summary\n• Relevant knowledge base articles\n• Your past support tickets\n• Provider information\n\nTransferring now..."
+                  ]
+                }
+              }
+            ]
+          },
+          "transitionRoutes": [
+            {
+              "condition": "true",
+              "targetPage": "End Page"
+            }
+          ]
+        },
+        {
+          "name": "End Page",
+          "displayName": "End Page",
+          "entryFulfillment": {
+            "messages": [
+              {
+                "text": {
+                  "text": [
+                    "Thank you for calling CMS Provider Support. If you need further assistance, please don't hesitate to call us again. Have a great day!"
+                  ]
+                }
+              }
+            ]
+          },
+          "isFinalPage": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "description": "Provider call flow for voice-based interactions with Agent Assist capabilities",
+    "version": "1.0",
+    "created": "2024-10-13",
+    "useCase": "Provider Agent Assist",
+    "features": [
+      "Voice transcription to text",
+      "NPI authentication",
+      "Claim status lookup",
+      "Policy information",
+      "Live agent transfer with Agent Assist data"
+    ]
+  }
+}
