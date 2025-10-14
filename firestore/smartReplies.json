@@ -1,0 +1,158 @@
+{
+  "smartReplies": [
+    {
+      "replyId": "REPLY-001",
+      "category": "medication_coverage",
+      "context": "beneficiary asking about prescription coverage",
+      "trigger_keywords": ["medication", "prescription", "coverage", "covered", "drug"],
+      "template": "Based on your {planType}, {medicationName} is covered under Part D. Your typical copay is ${copayAmount} for a {supplyDays}-day supply. Would you like me to help you find the nearest participating pharmacy?",
+      "variables": ["planType", "medicationName", "copayAmount", "supplyDays"],
+      "tone": "helpful",
+      "priority": "high"
+    },
+    {
+      "replyId": "REPLY-002",
+      "category": "appointment_scheduling",
+      "context": "beneficiary wants to schedule appointment",
+      "trigger_keywords": ["appointment", "schedule", "book", "visit", "doctor"],
+      "template": "I'd be happy to help you schedule a {appointmentType}. This service is fully covered under your plan. I have availability at {providerName} on {availableDates}. Which time works best for you?",
+      "variables": ["appointmentType", "providerName", "availableDates"],
+      "tone": "friendly",
+      "priority": "medium"
+    },
+    {
+      "replyId": "REPLY-003",
+      "category": "claim_inquiry",
+      "context": "beneficiary asking about claim status",
+      "trigger_keywords": ["claim", "status", "submitted", "approved", "denied"],
+      "template": "I can help you with your claim inquiry. Looking at claim {claimId} from {claimDate}, the status is currently {claimStatus}. {additionalInfo} Is there anything specific about this claim you'd like to know more about?",
+      "variables": ["claimId", "claimDate", "claimStatus", "additionalInfo"],
+      "tone": "informative",
+      "priority": "high"
+    },
+    {
+      "replyId": "REPLY-004",
+      "category": "benefits_inquiry",
+      "context": "beneficiary asking about available benefits",
+      "trigger_keywords": ["benefits", "coverage", "what's covered", "plan includes"],
+      "template": "Under your {planType}, you have access to {benefitsList}. All preventive services are covered at no cost to you. Would you like detailed information about any specific benefit?",
+      "variables": ["planType", "benefitsList"],
+      "tone": "educational",
+      "priority": "medium"
+    },
+    {
+      "replyId": "REPLY-005",
+      "category": "application_assistance",
+      "context": "beneficiary needs help with application",
+      "trigger_keywords": ["application", "apply", "enroll", "sign up"],
+      "template": "I see you're working on your {applicationType} application, which is {completionPercent}% complete. The next step is to {nextStep}. I can guide you through this process. Would you like to continue now?",
+      "variables": ["applicationType", "completionPercent", "nextStep"],
+      "tone": "encouraging",
+      "priority": "high"
+    },
+    {
+      "replyId": "REPLY-006",
+      "category": "preventive_care",
+      "context": "beneficiary asking about preventive services",
+      "trigger_keywords": ["wellness", "preventive", "screening", "vaccine", "flu shot"],
+      "template": "Great question! {serviceName} is a preventive service fully covered under your plan at no cost to you. {serviceDetails} Would you like me to help you schedule this service?",
+      "variables": ["serviceName", "serviceDetails"],
+      "tone": "enthusiastic",
+      "priority": "medium"
+    },
+    {
+      "replyId": "REPLY-007",
+      "category": "document_upload",
+      "context": "beneficiary needs to upload documents",
+      "trigger_keywords": ["upload", "document", "send", "photo", "file"],
+      "template": "To upload your {documentType}, please use the Documents section in the app. Select 'Upload New Document', choose {documentType} as the type, and either take a photo or select from your files. Accepted formats are {acceptedFormats}. Need help with this?",
+      "variables": ["documentType", "acceptedFormats"],
+      "tone": "instructional",
+      "priority": "medium"
+    },
+    {
+      "replyId": "REPLY-008",
+      "category": "medication_refill",
+      "context": "beneficiary needs medication refill",
+      "trigger_keywords": ["refill", "prescription", "running out", "medication"],
+      "template": "I can help you request a refill for {medicationName}. I see you have {refillsRemaining} refills remaining, expiring on {expirationDate}. Would you like me to send this refill request to {pharmacyName}?",
+      "variables": ["medicationName", "refillsRemaining", "expirationDate", "pharmacyName"],
+      "tone": "proactive",
+      "priority": "high"
+    },
+    {
+      "replyId": "REPLY-009",
+      "category": "urgent_care",
+      "context": "beneficiary has urgent health concern",
+      "trigger_keywords": ["urgent", "emergency", "pain", "can't breathe", "chest pain"],
+      "template": "I understand this is urgent. If you're experiencing a medical emergency, please call 911 immediately. For urgent but non-emergency care, I can connect you to our 24/7 Nurse Hotline at 1-800-MEDICARE. Would you like me to connect you now?",
+      "variables": [],
+      "tone": "serious",
+      "priority": "critical"
+    },
+    {
+      "replyId": "REPLY-010",
+      "category": "general_greeting",
+      "context": "initial greeting or general inquiry",
+      "trigger_keywords": ["hi", "hello", "help", "question"],
+      "template": "Hello {firstName}! I'm here to help you with your Medicare benefits and questions. I can assist you with checking benefits, scheduling appointments, medication questions, and more. What can I help you with today?",
+      "variables": ["firstName"],
+      "tone": "welcoming",
+      "priority": "low"
+    },
+    {
+      "replyId": "REPLY-011",
+      "category": "transfer_to_agent",
+      "context": "need to transfer to live agent",
+      "trigger_keywords": ["speak to person", "live agent", "representative", "human"],
+      "template": "I'd be happy to connect you with a live agent who can provide personalized assistance. Before I transfer you, let me gather some information to ensure you're connected with the right specialist. Your current inquiry is about {inquiryTopic}. Is this correct?",
+      "variables": ["inquiryTopic"],
+      "tone": "professional",
+      "priority": "high"
+    },
+    {
+      "replyId": "REPLY-012",
+      "category": "policy_updates",
+      "context": "informing about policy changes",
+      "trigger_keywords": ["policy", "change", "update", "new"],
+      "template": "I wanted to let you know about an important update to your plan. {updateDescription} This change takes effect on {effectiveDate}. {actionRequired} Do you have any questions about this update?",
+      "variables": ["updateDescription", "effectiveDate", "actionRequired"],
+      "tone": "informative",
+      "priority": "medium"
+    }
+  ],
+  "contextualResponses": {
+    "high_urgency": {
+      "prefix": "I understand this is important. ",
+      "escalation_threshold": 2,
+      "auto_transfer": true
+    },
+    "medication_related": {
+      "prefix": "Regarding your medication, ",
+      "requires_verification": true,
+      "pii_redaction": ["prescription_number", "pharmacy_details"]
+    },
+    "financial_inquiry": {
+      "prefix": "When it comes to costs and coverage, ",
+      "disclaimer": "Please note that actual costs may vary based on your specific circumstances.",
+      "requires_verification": true
+    }
+  },
+  "fallbackResponses": [
+    {
+      "scenario": "no_match",
+      "response": "I want to make sure I understand your question correctly. Could you provide a bit more detail about what you're looking for? I'm here to help with benefits, appointments, medications, claims, and more.",
+      "suggest_agent": false
+    },
+    {
+      "scenario": "complex_query",
+      "response": "This sounds like a detailed question that would benefit from speaking with one of our specialists. Would you like me to connect you with a live agent who can provide comprehensive assistance?",
+      "suggest_agent": true
+    },
+    {
+      "scenario": "outside_scope",
+      "response": "I appreciate your question, but this falls outside my area of support. I'd recommend connecting with a live agent who can better assist you with this specific situation. Shall I transfer you?",
+      "suggest_agent": true
+    }
+  ]
+}

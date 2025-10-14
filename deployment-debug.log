@@ -1,0 +1,148 @@
+[2025-10-14T18:50:06.084Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[2025-10-14T18:50:06.092Z] > authorizing via signed-in user (admin@farahomer.altostrat.com)
+[2025-10-14T18:50:06.093Z] [iam] checking project faomeroct10 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[2025-10-14T18:50:06.117Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.123Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.134Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions [none]
+[2025-10-14T18:50:06.138Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions x-goog-quota-user=projects/faomeroct10
+[2025-10-14T18:50:06.139Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[2025-10-14T18:50:06.484Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions 200
+[2025-10-14T18:50:06.486Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[2025-10-14T18:50:06.492Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.495Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.495Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/faomeroct10/serviceAccounts/faomeroct10@appspot.gserviceaccount.com:testIamPermissions [none]
+[2025-10-14T18:50:06.496Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/faomeroct10/serviceAccounts/faomeroct10@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[2025-10-14T18:50:06.665Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/faomeroct10/serviceAccounts/faomeroct10@appspot.gserviceaccount.com:testIamPermissions 200
+[2025-10-14T18:50:06.669Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/faomeroct10/serviceAccounts/faomeroct10@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+
+=== Deploying to 'faomeroct10'...
+
+i  deploying functions 
+[2025-10-14T18:50:06.706Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.707Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.709Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10 [none]
+[2025-10-14T18:50:06.872Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10 200
+[2025-10-14T18:50:06.875Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10 {"projectNumber":"402110471989","projectId":"faomeroct10","lifecycleState":"ACTIVE","name":"faomeroct10","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-10-10T20:46:14.841554Z","parent":{"type":"organization","id":"519023447151"}}
+i  functions: preparing codebase default for deployment 
+i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[2025-10-14T18:50:06.890Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.891Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:06.900Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/faomeroct10/adminSdkConfig [none]
+[2025-10-14T18:50:07.122Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/faomeroct10/adminSdkConfig 200
+[2025-10-14T18:50:07.122Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/faomeroct10/adminSdkConfig {"projectId":"faomeroct10","storageBucket":"faomeroct10.firebasestorage.app"}
+[2025-10-14T18:50:07.126Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:07.126Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:07.126Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/faomeroct10/configs [none]
+[2025-10-14T18:50:07.292Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/faomeroct10/configs 200
+[2025-10-14T18:50:07.294Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/faomeroct10/configs {}
+[2025-10-14T18:50:07.299Z] Validating nodejs source
+⚠  functions: Runtime Node.js 18 was deprecated on 2025-04-30 and will be decommissioned on 2025-10-30, after which you will not be able to deploy without upgrading. Consider upgrading now to avoid disruption. See https://cloud.google.com/functions/docs/runtime-support for full details on the lifecycle policy 
+⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[2025-10-14T18:50:08.368Z] > [functions] package.json contents: {
+  "name": "cms-beneficiary-selfservice-functions",
+  "version": "1.0.0",
+  "description": "Firebase Cloud Functions for CMS Beneficiary Self-Service Virtual Agent",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[2025-10-14T18:50:08.369Z] Building nodejs source
+i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[2025-10-14T18:50:08.386Z] Could not find functions.yaml. Must use http discovery
+[2025-10-14T18:50:08.405Z] Found firebase-functions binary at '/home/user/cmsces/functions/node_modules/.bin/firebase-functions'
+Serving at port 8280
+
+[2025-10-14T18:50:09.551Z] Got response from /__/functions.yaml {"endpoints":{"dialogflowWebhook":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"dialogflowWebhook"},"authenticateBeneficiary":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"authenticateBeneficiary"},"authenticateProviderApi":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"authenticateProviderApi"},"generateAgentAssistDataApi":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"generateAgentAssistDataApi"},"createCrmTicketApi":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"createCrmTicketApi"},"healthCheck":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"healthCheck"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[2025-10-14T18:50:09.613Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[2025-10-14T18:50:09.614Z] > authorizing via signed-in user (admin@farahomer.altostrat.com)
+[2025-10-14T18:50:09.615Z] [iam] checking project faomeroct10 for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[2025-10-14T18:50:09.616Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:09.616Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:09.617Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions [none]
+[2025-10-14T18:50:09.617Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions x-goog-quota-user=projects/faomeroct10
+[2025-10-14T18:50:09.618Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[2025-10-14T18:50:09.677Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions 200
+[2025-10-14T18:50:09.678Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[2025-10-14T18:50:09.684Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:09.685Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:09.691Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/faomeroct10/instances pageSize=100&pageToken=
+[2025-10-14T18:50:09.964Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/faomeroct10/instances 200
+[2025-10-14T18:50:09.969Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/faomeroct10/instances {}
+i  functions: preparing functions directory for uploading... 
+i  functions: packaged /home/user/cmsces/functions (90.95 KB) for uploading 
+[2025-10-14T18:50:10.260Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:10.267Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:10.267Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/-/functions [none]
+[2025-10-14T18:50:10.812Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/-/functions 200
+[2025-10-14T18:50:10.813Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/-/functions {}
+[2025-10-14T18:50:10.814Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:10.814Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:10.815Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/faomeroct10/locations/-/functions filter=environment%3D%22GEN_2%22
+[2025-10-14T18:50:11.219Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/faomeroct10/locations/-/functions 200
+[2025-10-14T18:50:11.220Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/faomeroct10/locations/-/functions {}
+[2025-10-14T18:50:11.243Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.244Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.245Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10 [none]
+[2025-10-14T18:50:11.358Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10 200
+[2025-10-14T18:50:11.358Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10 {"projectNumber":"402110471989","projectId":"faomeroct10","lifecycleState":"ACTIVE","name":"faomeroct10","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-10-10T20:46:14.841554Z","parent":{"type":"organization","id":"519023447151"}}
+[2025-10-14T18:50:11.362Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.365Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.366Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/faomeroct10/billingInfo [none]
+[2025-10-14T18:50:11.490Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/faomeroct10/billingInfo 200
+[2025-10-14T18:50:11.492Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/faomeroct10/billingInfo {"name":"projects/faomeroct10/billingInfo","projectId":"faomeroct10","billingAccountName":"billingAccounts/017CF7-4E96EE-64356B","billingEnabled":true}
+[2025-10-14T18:50:11.496Z] [functions] found 6 new HTTP functions, testing setIamPolicy permission...
+[2025-10-14T18:50:11.503Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.503Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.504Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions [none]
+[2025-10-14T18:50:11.504Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions x-goog-quota-user=projects/faomeroct10
+[2025-10-14T18:50:11.504Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[2025-10-14T18:50:11.561Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions 200
+[2025-10-14T18:50:11.563Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faomeroct10:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[2025-10-14T18:50:11.567Z] [functions] found setIamPolicy permission, proceeding with deploy
+[2025-10-14T18:50:11.573Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.573Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:11.574Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions:generateUploadUrl [none]
+[2025-10-14T18:50:11.582Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions:generateUploadUrl {}
+[2025-10-14T18:50:12.126Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions:generateUploadUrl 200
+[2025-10-14T18:50:12.128Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-419376346237.us-central1.cloudfunctions.appspot.com/8c341389-47f1-407c-94f6-0d51868793c6.zip?GoogleAccessId=service-402110471989@gcf-admin-robot.iam.gserviceaccount.com&Expires=1760469612&Signature=nqHObLxfia8bt35XCuj3J6QmElAvZhK8Irl6qOo3OrkTje785FSOIbpbn6nuTcMibkR4%2B3h%2FRf6iDrjPbddk3ECqQfsUcLoJiGsXZ6XxSE9z%2FzpBCjbgJWOQUnJygEX81ZHPtyZBEK6nwwt2ZHTcLIGOGXj%2FemBHp82hRmfm8i7Pvsj1v1jyY4a4LxnBgyk8h4fI3DPQda2p7DROLWQaLcXTebBAMlI3wt7Wr%2Fw1jYJbiQbFPKPTKa6Iz7daV51WQ7DhOTmMBVmYjIKv2YegRCGzIL3%2FLr4gZB51VQbgoUWNsMVDn0KArlSH9LBoBG1qQ08z%2FEAsdpmgZFwt8DiU8A%3D%3D"}
+[2025-10-14T18:50:12.131Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-419376346237.us-central1.cloudfunctions.appspot.com/8c341389-47f1-407c-94f6-0d51868793c6.zip GoogleAccessId=service-402110471989%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1760469612&Signature=nqHObLxfia8bt35XCuj3J6QmElAvZhK8Irl6qOo3OrkTje785FSOIbpbn6nuTcMibkR4%2B3h%2FRf6iDrjPbddk3ECqQfsUcLoJiGsXZ6XxSE9z%2FzpBCjbgJWOQUnJygEX81ZHPtyZBEK6nwwt2ZHTcLIGOGXj%2FemBHp82hRmfm8i7Pvsj1v1jyY4a4LxnBgyk8h4fI3DPQda2p7DROLWQaLcXTebBAMlI3wt7Wr%2Fw1jYJbiQbFPKPTKa6Iz7daV51WQ7DhOTmMBVmYjIKv2YegRCGzIL3%2FLr4gZB51VQbgoUWNsMVDn0KArlSH9LBoBG1qQ08z%2FEAsdpmgZFwt8DiU8A%3D%3D
+[2025-10-14T18:50:12.132Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-419376346237.us-central1.cloudfunctions.appspot.com/8c341389-47f1-407c-94f6-0d51868793c6.zip [stream]
+[2025-10-14T18:50:12.316Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-419376346237.us-central1.cloudfunctions.appspot.com/8c341389-47f1-407c-94f6-0d51868793c6.zip 200
+[2025-10-14T18:50:12.318Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-419376346237.us-central1.cloudfunctions.appspot.com/8c341389-47f1-407c-94f6-0d51868793c6.zip [omitted]
+✔  functions: functions source uploaded successfully 
+i  functions: creating Node.js 18 (1st Gen) function dialogflowWebhook(us-central1)... 
+i  functions: creating Node.js 18 (1st Gen) function authenticateBeneficiary(us-central1)... 
+i  functions: creating Node.js 18 (1st Gen) function authenticateProviderApi(us-central1)... 
+i  functions: creating Node.js 18 (1st Gen) function generateAgentAssistDataApi(us-central1)... 
+i  functions: creating Node.js 18 (1st Gen) function createCrmTicketApi(us-central1)... 
+i  functions: creating Node.js 18 (1st Gen) function healthCheck(us-central1)... 
+[2025-10-14T18:50:12.344Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:12.344Z] Checked if tokens are valid: true, expires at: 1760471095583
+[2025-10-14T18:50:12.349Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions [none]
+[2025-10-14T18:50:12.350Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions {"name":"projects/faomeroct10/locations/us-central1/functions/dialogflowWebhook","sourceUploadUrl":"https://storage.googleapis.com/uploads-419376346237.us-central1.cloudfunctions.appspot.com/8c341389-47f1-407c-94f6-0d51868793c6.zip?GoogleAccessId=service-402110471989@gcf-admin-robot.iam.gserviceaccount.com&Expires=1760469612&Signature=nqHObLxfia8bt35XCuj3J6QmElAvZhK8Irl6qOo3OrkTje785FSOIbpbn6nuTcMibkR4%2B3h%2FRf6iDrjPbddk3ECqQfsUcLoJiGsXZ6XxSE9z%2FzpBCjbgJWOQUnJygEX81ZHPtyZBEK6nwwt2ZHTcLIGOGXj%2FemBHp82hRmfm8i7Pvsj1v1jyY4a4LxnBgyk8h4fI3DPQda2p7DROLWQaLcXTebBAMlI3wt7Wr%2Fw1jYJbiQbFPKPTKa6Iz7daV51WQ7DhOTmMBVmYjIKv2YegRCGzIL3%2FLr4gZB51VQbgoUWNsMVDn0KArlSH9LBoBG1qQ08z%2FEAsdpmgZFwt8DiU8A%3D%3D","entryPoint":"dialogflowWebhook","runtime":"nodejs18","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase--project-idx","firebase-functions-hash":"fc60b177128182f30e7683456c5fd1293f647b03"},"httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"minInstances":null,"maxInstances":null,"ingressSettings":null,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"faomeroct10\",\"storageBucket\":\"faomeroct10.firebasestorage.app\"}","GCLOUD_PROJECT":"faomeroct10","EVENTARC_CLOUD_EVENT_SOURCE":"projects/faomeroct10/locations/us-central1/functions/dialogflowWebhook"},"serviceAccountEmail":null,"availableMemoryMb":null,"timeout":null,"vpcConnector":null,"vpcConnectorEgressSettings":null,"buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}}
+[2025-10-14T18:50:12.585Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions 400
+[2025-10-14T18:50:12.585Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/faomeroct10/locations/us-central1/functions {"error":{"code":400,"message":"Failed to create 1st Gen function projects/faomeroct10/locations/us-central1/functions/dialogflowWebhook: The request has violated one or more Org Policies. Please refer to the respective violations for more information. violations \t {\n  type: \"constraints/cloudfunctions.allowedIngressSettings\"\n  subject: \"orgpolicy:projects/faomeroct10\"\n  description: \"Constraint constraints/cloudfunctions.allowedIngressSettings violated for projects/faomeroct10 attempting InternalPrepareCreateFunctionAction with ingress_settings set to INGRESS_SETTINGS_UNSPECIFIED. See https://cloud.google.com/resource-manager/docs/organization-policy/org-policy-constraints for more information.\"\n}\n","status":"FAILED_PRECONDITION"}}
+⚠  functions: failed to create function projects/faomeroct10/locations/us-central1/functions/dialogflowWebhook 
+Failed to create function projects/faomeroct10/locations/us-central1/functions/dialogflowWebhook

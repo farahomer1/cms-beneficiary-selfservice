@@ -1,0 +1,243 @@
+{
+  "documents": [
+    {
+      "documentId": "DOC-2024-001",
+      "beneficiaryId": "123-45-6789",
+      "type": "Medical Records",
+      "category": "health",
+      "name": "Blood Test Results - October 2024",
+      "description": "A1C and glucose levels",
+      "fileName": "blood_test_oct_2024.pdf",
+      "fileSize": "245KB",
+      "uploadedAt": "2024-10-12T09:20:00Z",
+      "status": "approved",
+      "reviewedBy": "Dr. Sarah Mitchell",
+      "reviewedAt": "2024-10-12T14:30:00Z",
+      "tags": ["diabetes", "lab results", "preventive care"],
+      "relatedTo": {
+        "type": "program",
+        "id": "Diabetes Management"
+      }
+    },
+    {
+      "documentId": "DOC-2024-002",
+      "beneficiaryId": "234-56-7890",
+      "type": "Income Verification",
+      "category": "financial",
+      "name": "Social Security Statement 2024",
+      "description": "Annual benefit statement for supplemental coverage application",
+      "fileName": "ss_statement_2024.pdf",
+      "fileSize": "156KB",
+      "uploadedAt": "2024-10-13T14:35:00Z",
+      "status": "pending_review",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "tags": ["application", "income", "supplemental coverage"],
+      "relatedTo": {
+        "type": "application",
+        "id": "Supplemental Coverage",
+        "applicationId": "APP-2024-045"
+      }
+    },
+    {
+      "documentId": "DOC-2024-003",
+      "beneficiaryId": "234-56-7890",
+      "type": "Prescription",
+      "category": "health",
+      "name": "Atorvastatin Prescription",
+      "description": "Updated prescription from Dr. Chen",
+      "fileName": "prescription_atorvastatin.jpg",
+      "fileSize": "892KB",
+      "uploadedAt": "2024-09-15T11:20:00Z",
+      "status": "approved",
+      "reviewedBy": "Pharmacy - CVS",
+      "reviewedAt": "2024-09-15T12:00:00Z",
+      "tags": ["medication", "prescription", "heart health"],
+      "relatedTo": {
+        "type": "medication",
+        "id": "Atorvastatin"
+      }
+    },
+    {
+      "documentId": "DOC-2024-004",
+      "beneficiaryId": "345-67-8901",
+      "type": "Medical Records",
+      "category": "health",
+      "name": "Lab Results - July 2024",
+      "description": "Annual wellness visit lab work",
+      "fileName": "lab_results_july_2024.pdf",
+      "fileSize": "321KB",
+      "uploadedAt": "2024-07-15T10:00:00Z",
+      "status": "approved",
+      "reviewedBy": "Dr. Lisa Thompson",
+      "reviewedAt": "2024-07-16T09:15:00Z",
+      "tags": ["wellness visit", "lab results", "preventive care"],
+      "relatedTo": {
+        "type": "claim",
+        "id": "CLM-2024-015"
+      }
+    },
+    {
+      "documentId": "DOC-2024-005",
+      "beneficiaryId": "345-67-8901",
+      "type": "Insurance Card",
+      "category": "administrative",
+      "name": "Medicare Card Photo",
+      "description": "Front and back of Medicare Advantage card",
+      "fileName": "medicare_card.jpg",
+      "fileSize": "1.2MB",
+      "uploadedAt": "2024-09-01T08:00:00Z",
+      "status": "approved",
+      "reviewedBy": "System",
+      "reviewedAt": "2024-09-01T08:05:00Z",
+      "tags": ["insurance", "identification", "card"],
+      "relatedTo": null
+    },
+    {
+      "documentId": "DOC-2024-006",
+      "beneficiaryId": "456-78-9012",
+      "type": "Medical Records",
+      "category": "health",
+      "name": "COPD Management Plan",
+      "description": "Updated treatment plan from pulmonologist",
+      "fileName": "copd_plan_2024.pdf",
+      "fileSize": "445KB",
+      "uploadedAt": "2024-08-20T14:30:00Z",
+      "status": "approved",
+      "reviewedBy": "Dr. Robert Zhang",
+      "reviewedAt": "2024-08-21T10:00:00Z",
+      "tags": ["COPD", "chronic care", "treatment plan"],
+      "relatedTo": {
+        "type": "program",
+        "id": "Chronic Care Management"
+      }
+    },
+    {
+      "documentId": "DOC-2024-007",
+      "beneficiaryId": "456-78-9012",
+      "type": "Application Form",
+      "category": "administrative",
+      "name": "Part D Enrollment Form",
+      "description": "Partially completed Part D prescription coverage application",
+      "fileName": "partd_enrollment_draft.pdf",
+      "fileSize": "567KB",
+      "uploadedAt": "2024-10-08T16:45:00Z",
+      "status": "draft",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "tags": ["application", "Part D", "in progress"],
+      "relatedTo": {
+        "type": "application",
+        "id": "Part D Prescription Coverage",
+        "applicationId": "APP-2024-092"
+      }
+    },
+    {
+      "documentId": "DOC-2024-008",
+      "beneficiaryId": "567-89-0123",
+      "type": "Medical Records",
+      "category": "health",
+      "name": "Memory Assessment Results",
+      "description": "Cognitive screening results from July visit",
+      "fileName": "cognitive_assessment_july.pdf",
+      "fileSize": "198KB",
+      "uploadedAt": "2024-07-20T11:00:00Z",
+      "status": "approved",
+      "reviewedBy": "Dr. Amanda Foster",
+      "reviewedAt": "2024-07-20T15:30:00Z",
+      "tags": ["cognitive health", "assessment", "memory care"],
+      "relatedTo": {
+        "type": "program",
+        "id": "Memory Care Support"
+      }
+    },
+    {
+      "documentId": "DOC-2024-009",
+      "beneficiaryId": "567-89-0123",
+      "type": "Vaccination Record",
+      "category": "health",
+      "name": "2024 Flu Shot Record",
+      "description": "Vaccination confirmation - scheduled",
+      "fileName": "flu_shot_2024.pdf",
+      "fileSize": "89KB",
+      "uploadedAt": "2024-10-14T16:25:00Z",
+      "status": "pending",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "tags": ["vaccination", "preventive care", "flu shot"],
+      "relatedTo": {
+        "type": "appointment",
+        "date": "2024-11-22"
+      }
+    },
+    {
+      "documentId": "DOC-2024-010",
+      "beneficiaryId": "123-45-6789",
+      "type": "Prescription",
+      "category": "health",
+      "name": "Metformin Refill Request",
+      "description": "Prescription refill request submitted",
+      "fileName": "metformin_refill_oct.pdf",
+      "fileSize": "134KB",
+      "uploadedAt": "2024-10-13T10:20:00Z",
+      "status": "processing",
+      "reviewedBy": "CVS Pharmacy",
+      "reviewedAt": null,
+      "tags": ["medication", "refill", "diabetes"],
+      "relatedTo": {
+        "type": "medication",
+        "id": "Metformin"
+      }
+    }
+  ],
+  "documentTypes": [
+    {
+      "type": "Medical Records",
+      "category": "health",
+      "description": "Lab results, test results, treatment plans",
+      "requiredFor": ["claims", "programs"],
+      "acceptedFormats": [".pdf", ".jpg", ".png"],
+      "maxSize": "5MB"
+    },
+    {
+      "type": "Prescription",
+      "category": "health",
+      "description": "Medication prescriptions from healthcare providers",
+      "requiredFor": ["medication_refills"],
+      "acceptedFormats": [".pdf", ".jpg", ".png"],
+      "maxSize": "2MB"
+    },
+    {
+      "type": "Income Verification",
+      "category": "financial",
+      "description": "Tax returns, Social Security statements, pay stubs",
+      "requiredFor": ["applications", "subsidies"],
+      "acceptedFormats": [".pdf"],
+      "maxSize": "3MB"
+    },
+    {
+      "type": "Insurance Card",
+      "category": "administrative",
+      "description": "Medicare card, insurance ID cards",
+      "requiredFor": ["enrollment", "claims"],
+      "acceptedFormats": [".jpg", ".png", ".pdf"],
+      "maxSize": "2MB"
+    },
+    {
+      "type": "Application Form",
+      "category": "administrative",
+      "description": "Enrollment forms, application documents",
+      "requiredFor": ["applications"],
+      "acceptedFormats": [".pdf"],
+      "maxSize": "3MB"
+    },
+    {
+      "type": "Vaccination Record",
+      "category": "health",
+      "description": "Immunization records, vaccination certificates",
+      "requiredFor": ["preventive_care"],
+      "acceptedFormats": [".pdf", ".jpg", ".png"],
+      "maxSize": "1MB"
+    }
+  ]
+}
