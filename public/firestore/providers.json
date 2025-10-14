@@ -1,0 +1,87 @@
+[
+  {
+    "npiNumber": "1234567890",
+    "clinicName": "Springfield Medical Center",
+    "contactPerson": "Dr. Sarah Johnson",
+    "phone": "(555) 123-4567",
+    "email": "sjohnson@springfieldmedical.com",
+    "address": {
+      "street": "100 Medical Plaza",
+      "city": "Springfield",
+      "state": "IL",
+      "zipCode": "62701"
+    },
+    "specialty": "Primary Care",
+    "taxId": "12-3456789",
+    "enrollmentDate": "2020-01-15",
+    "status": "Active"
+  },
+  {
+    "npiNumber": "2345678901",
+    "clinicName": "Riverside Cardiology Associates",
+    "contactPerson": "Dr. Michael Chen",
+    "phone": "(555) 234-5678",
+    "email": "mchen@riversidecardio.com",
+    "address": {
+      "street": "250 Heart Center Dr",
+      "city": "Portland",
+      "state": "OR",
+      "zipCode": "97201"
+    },
+    "specialty": "Cardiology",
+    "taxId": "23-4567890",
+    "enrollmentDate": "2019-06-20",
+    "status": "Active"
+  },
+  {
+    "npiNumber": "3456789012",
+    "clinicName": "Metro Orthopedic Group",
+    "contactPerson": "Dr. Jennifer Martinez",
+    "phone": "(555) 345-6789",
+    "email": "jmartinez@metroortho.com",
+    "address": {
+      "street": "500 Bone & Joint Blvd",
+      "city": "Denver",
+      "state": "CO",
+      "zipCode": "80202"
+    },
+    "specialty": "Orthopedic Surgery",
+    "taxId": "34-5678901",
+    "enrollmentDate": "2021-03-10",
+    "status": "Active"
+  },
+  {
+    "npiNumber": "4567890123",
+    "clinicName": "Sunset Pediatric Clinic",
+    "contactPerson": "Dr. David Williams",
+    "phone": "(555) 456-7890",
+    "email": "dwilliams@sunsetpediatrics.com",
+    "address": {
+      "street": "800 Children's Way",
+      "city": "San Diego",
+      "state": "CA",
+      "zipCode": "92101"
+    },
+    "specialty": "Pediatrics",
+    "taxId": "45-6789012",
+    "enrollmentDate": "2018-11-05",
+    "status": "Active"
+  },
+  {
+    "npiNumber": "5678901234",
+    "clinicName": "Coastal Dermatology Center",
+    "contactPerson": "Dr. Emily Thompson",
+    "phone": "(555) 567-8901",
+    "email": "ethompson@coastalderm.com",
+    "address": {
+      "street": "150 Skin Care Lane",
+      "city": "Miami",
+      "state": "FL",
+      "zipCode": "33101"
+    },
+    "specialty": "Dermatology",
+    "taxId": "56-7890123",
+    "enrollmentDate": "2022-02-28",
+    "status": "Active"
+  }
+]

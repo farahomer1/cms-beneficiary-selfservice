@@ -1,0 +1,293 @@
+{
+  "beneficiaries": [
+    {
+      "medicareId": "123-45-6789",
+      "firstName": "Mary",
+      "lastName": "Johnson",
+      "dateOfBirth": "1950-03-15",
+      "email": "mary.johnson@example.com",
+      "phone": "(555) 123-4567",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62701"
+      },
+      "enrollmentDate": "2015-01-01",
+      "coverageType": ["Part A", "Part B", "Part D"],
+      "planType": "Medicare Advantage Plan C",
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en",
+      "lastWellnessVisitDate": "2024-02-10",
+      "preventiveServiceDue": true,
+      "hasUnfinishedApplication": false,
+      "medicationRefillDue": true,
+      "upcomingAppointment": {
+        "date": "2024-11-25",
+        "time": "10:30 AM",
+        "type": "Annual Wellness Visit",
+        "provider": "Dr. Sarah Mitchell",
+        "location": "Springfield Health Center"
+      },
+      "preferences": {
+        "notificationMethod": "both",
+        "bestTimeToContact": "morning",
+        "communicationLanguage": "en"
+      },
+      "healthConditions": ["diabetes", "hypertension"],
+      "medications": [
+        {
+          "name": "Metformin",
+          "dosage": "500mg",
+          "refillDate": "2024-10-20",
+          "refillsRemaining": 1
+        }
+      ],
+      "lastAppUsage": "2024-10-12T09:15:00Z",
+      "enrolledPrograms": ["Diabetes Management", "Preventive Care Plus"]
+    },
+    {
+      "medicareId": "234-56-7890",
+      "firstName": "Robert",
+      "lastName": "Smith",
+      "dateOfBirth": "1948-07-22",
+      "email": "robert.smith@example.com",
+      "phone": "(555) 234-5678",
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201"
+      },
+      "enrollmentDate": "2013-06-15",
+      "coverageType": ["Part A", "Part B", "Part C"],
+      "planType": "Medicare Advantage Plan B",
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en",
+      "lastWellnessVisitDate": "2024-08-05",
+      "preventiveServiceDue": false,
+      "hasUnfinishedApplication": true,
+      "medicationRefillDue": false,
+      "upcomingAppointment": {
+        "date": "2024-12-10",
+        "time": "2:00 PM",
+        "type": "Cardiology Follow-up",
+        "provider": "Dr. James Chen",
+        "location": "Portland Heart Institute"
+      },
+      "preferences": {
+        "notificationMethod": "email",
+        "bestTimeToContact": "afternoon",
+        "communicationLanguage": "en"
+      },
+      "healthConditions": ["heart disease", "high cholesterol"],
+      "medications": [
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "refillDate": "2024-11-15",
+          "refillsRemaining": 3
+        }
+      ],
+      "lastAppUsage": "2024-10-13T14:22:00Z",
+      "enrolledPrograms": ["Heart Health Program"],
+      "pendingApplications": [
+        {
+          "type": "Supplemental Coverage",
+          "startedDate": "2024-09-15",
+          "percentComplete": 65,
+          "nextStep": "Upload income documentation"
+        }
+      ]
+    },
+    {
+      "medicareId": "345-67-8901",
+      "firstName": "Patricia",
+      "lastName": "Williams",
+      "dateOfBirth": "1952-11-08",
+      "email": "patricia.williams@example.com",
+      "phone": "(555) 345-6789",
+      "address": {
+        "street": "789 Pine Road",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701"
+      },
+      "enrollmentDate": "2017-03-20",
+      "coverageType": ["Part A", "Part B", "Part D", "dental", "vision"],
+      "planType": "Medicare Advantage Plus",
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en",
+      "lastWellnessVisitDate": "2024-09-20",
+      "preventiveServiceDue": false,
+      "hasUnfinishedApplication": false,
+      "medicationRefillDue": false,
+      "upcomingAppointment": {
+        "date": "2024-11-18",
+        "time": "11:00 AM",
+        "type": "Dental Cleaning",
+        "provider": "Dr. Lisa Thompson DDS",
+        "location": "Austin Dental Care"
+      },
+      "preferences": {
+        "notificationMethod": "sms",
+        "bestTimeToContact": "evening",
+        "communicationLanguage": "en"
+      },
+      "healthConditions": ["osteoarthritis"],
+      "medications": [
+        {
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "refillDate": "2024-12-01",
+          "refillsRemaining": 5
+        }
+      ],
+      "lastAppUsage": "2024-10-14T18:45:00Z",
+      "enrolledPrograms": ["Wellness Rewards", "Dental Plus"],
+      "recentClaims": [
+        {
+          "claimId": "CLM-2024-015",
+          "date": "2024-09-20",
+          "service": "Annual Wellness Visit",
+          "status": "Approved",
+          "amountCovered": 250.00
+        }
+      ]
+    },
+    {
+      "medicareId": "456-78-9012",
+      "firstName": "James",
+      "lastName": "Brown",
+      "dateOfBirth": "1949-05-30",
+      "email": "james.brown@example.com",
+      "phone": "(555) 456-7890",
+      "address": {
+        "street": "321 Elm Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101"
+      },
+      "enrollmentDate": "2014-09-10",
+      "coverageType": ["Part A", "Part B"],
+      "planType": "Original Medicare",
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en",
+      "lastWellnessVisitDate": "2023-11-15",
+      "preventiveServiceDue": true,
+      "hasUnfinishedApplication": true,
+      "medicationRefillDue": true,
+      "upcomingAppointment": null,
+      "preferences": {
+        "notificationMethod": "email",
+        "bestTimeToContact": "morning",
+        "communicationLanguage": "en"
+      },
+      "healthConditions": ["COPD", "diabetes"],
+      "medications": [
+        {
+          "name": "Albuterol Inhaler",
+          "dosage": "90mcg",
+          "refillDate": "2024-10-18",
+          "refillsRemaining": 0
+        },
+        {
+          "name": "Metformin",
+          "dosage": "1000mg",
+          "refillDate": "2024-10-22",
+          "refillsRemaining": 2
+        }
+      ],
+      "lastAppUsage": "2024-10-08T08:30:00Z",
+      "enrolledPrograms": ["Chronic Care Management"],
+      "pendingApplications": [
+        {
+          "type": "Part D Prescription Coverage",
+          "startedDate": "2024-08-20",
+          "percentComplete": 40,
+          "nextStep": "Review plan options and select coverage"
+        }
+      ],
+      "alerts": [
+        {
+          "type": "urgent",
+          "message": "Annual wellness visit overdue",
+          "date": "2024-10-10"
+        },
+        {
+          "type": "reminder",
+          "message": "Medication refill needed",
+          "date": "2024-10-15"
+        }
+      ]
+    },
+    {
+      "medicareId": "567-89-0123",
+      "firstName": "Linda",
+      "lastName": "Davis",
+      "dateOfBirth": "1951-12-18",
+      "email": "linda.davis@example.com",
+      "phone": "(555) 567-8901",
+      "address": {
+        "street": "654 Maple Drive",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201"
+      },
+      "enrollmentDate": "2016-11-05",
+      "coverageType": ["Part A", "Part B", "Part D", "dental"],
+      "planType": "Medicare Advantage Plan A",
+      "isAuthenticated": false,
+      "lastLoginDate": null,
+      "preferredLanguage": "en",
+      "lastWellnessVisitDate": "2024-07-12",
+      "preventiveServiceDue": false,
+      "hasUnfinishedApplication": false,
+      "medicationRefillDue": false,
+      "upcomingAppointment": {
+        "date": "2024-11-22",
+        "time": "3:30 PM",
+        "type": "Flu Shot",
+        "provider": "Denver Community Clinic",
+        "location": "1234 Health Plaza"
+      },
+      "preferences": {
+        "notificationMethod": "both",
+        "bestTimeToContact": "afternoon",
+        "communicationLanguage": "en"
+      },
+      "healthConditions": ["arthritis", "mild cognitive impairment"],
+      "medications": [
+        {
+          "name": "Aspirin",
+          "dosage": "81mg",
+          "refillDate": "2024-11-30",
+          "refillsRemaining": 6
+        }
+      ],
+      "lastAppUsage": "2024-10-14T16:20:00Z",
+      "enrolledPrograms": ["Preventive Care Plus", "Memory Care Support"],
+      "recentClaims": [
+        {
+          "claimId": "CLM-2024-022",
+          "date": "2024-07-12",
+          "service": "Annual Wellness Visit",
+          "status": "Approved",
+          "amountCovered": 250.00
+        }
+      ],
+      "documents": [
+        {
+          "type": "Medical Records",
+          "name": "Lab Results - July 2024",
+          "uploadDate": "2024-07-15",
+          "status": "approved"
+        }
+      ]
+    }
+  ]
+}
