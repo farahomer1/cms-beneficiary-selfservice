@@ -2,6 +2,135 @@
 
 An AI-powered customer engagement solution for Centers for Medicare and Medicaid Services (CMS) beneficiaries to access self-service options through a conversational interface.
 
+## 🚀 Live Demos
+
+### Use Case 1: Beneficiary Self-Service Chat
+**URL:** https://faomeroct10.web.app
+
+A conversational AI chatbot that helps Medicare beneficiaries with:
+- Claim status inquiries
+- Benefits information
+- Provider searches
+- Secure authentication
+
+### Use Case 3: Proactive Mobile App
+**URL:** https://faomeroct10.web.app/mobile
+
+A personalized mobile experience featuring:
+- Dashboard with health overview
+- Proactive notifications
+- AI chat with live agent handoff
+- Document management
+
+---
+
+## 🎯 Quick Start: Try the Demos
+
+### 🗨️ Use Case 1 Demo Actions (Chat Interface)
+
+**Step-by-Step Test:**
+
+1. **Open the Chat** → https://faomeroct10.web.app
+2. **Start with a greeting**
+   - Type: `Hello` or `Hi`
+   - Expected: Welcome message with options
+
+3. **Check a Claim Status**
+   - Type: `Check my claim status`
+   - Use Claim ID: `CLM-2024-001`
+   - Expected: Claim details (Approved, $2,850)
+
+4. **Ask About Benefits**
+   - Type: `What does Part A cover?`
+   - Expected: Hospital coverage details
+   - Try also: `Tell me about dental benefits`
+
+5. **Find a Provider**
+   - Type: `Find a cardiologist`
+   - Expected: List of cardiology providers
+   - Try also: `Find a dentist near me`
+
+6. **Alternative Queries to Try:**
+   ```
+   - "What's covered under my plan?"
+   - "How do I file a claim?"
+   - "Find an ophthalmologist"
+   - "Check claim CLM-2024-003"
+   - "What's the status of my pending claim?"
+   ```
+
+---
+
+### 📱 Use Case 3 Demo Actions (Mobile App)
+
+**Complete Feature Tour:**
+
+1. **Login to the App** → https://faomeroct10.web.app/mobile
+
+2. **Quick Login Options** (Click any button):
+   - **Mary Johnson** → Has medication refill due, wellness visit needed
+   - **Robert Smith** → Unfinished application (65% complete)
+   - **James Brown** → Multiple urgent alerts, critical medication
+
+3. **Explore the Dashboard** (Home tab):
+   - View upcoming appointments
+   - Check action items (wellness visits, refills)
+   - See current medications
+   - Review health programs
+   - Check plan coverage
+
+4. **Check Notifications** (Alerts tab):
+   - See 2 unread notifications for Mary
+   - Priority badges: urgent (red), high (orange), medium (yellow)
+   - Click "Take Action" buttons
+   - Mark notifications as read
+
+5. **Use the Chat Feature** (Chat tab):
+   - Click the **💊 Medications** quick reply
+   - Type: `I need help with my medications`
+   - Type: `Schedule an appointment`
+   - Type: `Check my benefits`
+
+6. **Try Live Agent Handoff**:
+   - In Chat, click **"Connect to Live Agent"** button
+   - Watch the secure context transfer animation
+   - See agent receive your information with PII redacted
+   - Notice the green agent message appears after 3 seconds
+
+7. **View Documents** (Documents tab):
+   - See uploaded medical records
+   - Check document status (approved, pending, processing)
+   - Click the upload area to see upload dialog
+   - View document metadata (size, date)
+
+**Specific Actions to Test:**
+
+```
+Dashboard Actions:
+→ Click "View Details" on upcoming appointment
+→ Click "Refill" button on medications
+→ Click "View Benefits" on coverage card
+→ Use quick action buttons (Chat Support, Upload Document)
+
+Notification Actions:
+→ Click "Schedule Visit" on wellness reminder
+→ Click "Request Refill" on medication alert
+→ Click "Continue Application" on application reminder
+
+Chat Actions:
+→ Try smart reply buttons
+→ Send "I'm having trouble breathing" (urgent response)
+→ Ask "How do I upload documents?"
+→ Initiate agent handoff
+
+Document Actions:
+→ Click upload area
+→ View existing documents
+→ Check document status badges
+```
+
+---
+
 ## Overview
 
 This prototype demonstrates how AI can transform government contact centers by enabling beneficiaries to:
